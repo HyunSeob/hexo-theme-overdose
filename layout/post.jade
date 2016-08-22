@@ -1,0 +1,28 @@
+extends includes/layout
+
+block content
+  #bg
+    #bg-img(style="background-image: url(#{page.background || '/images/default_bg.jpg'})")
+    #bg-overlay
+  article#post.card
+    if page.photos.length
+      img.header-img(src="#{page.photos[0]}")
+    h1.post-title= page.title
+    .post-meta
+      time(datetime=date_xml(page.date))= 'Written at ' + date(page.date)
+      - page.tags.each(function(tag) {
+        a.tag(href='/tags/' + tag.name + '/' rel="tag")= '#' + tag.name
+      - })
+    != page.content
+    
+    //- Below lines are for disqus.
+    if theme.disqus
+      #disqus_thread
+      script.
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//#{theme.disqus}.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+  include includes/pagination

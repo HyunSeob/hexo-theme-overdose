@@ -1,0 +1,11 @@
+@import "bourbon";
+
+$white: #FFF;
+$black: #222;
+$gray: #999;
+$lighted-gray: #EEE;
+$primary-sky: #59ABE3;
+$darked-sky: darken($primary-sky, 20);
+$lighted-sky: lighten($primary-sky, 20);
+
+$base-margin: 24px;

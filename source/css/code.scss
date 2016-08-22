@@ -1,0 +1,53 @@
+.highlight {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #282a36;
+  color: #f8f8f2;
+  .subst {
+    color: #f8f8f2;
+  }
+  .keyword,
+  .selector-tag,
+  .literal,
+  .section,
+  .link {
+    color: #8be9fd;
+  }
+  .function .keyword {
+    color: #ff79c6;
+  }
+  .string,
+  .title,
+  .name,
+  .type,
+  .attribute,
+  .symbol,
+  .bullet,
+  .addition,
+  .variable,
+  .template-tag,
+  .template-variable {
+    color: #f1fa8c;
+  }
+  .comment,
+  .quote,
+  .deletion,
+  .meta {
+    color: #6272a4;
+  }
+  .keyword,
+  .selector-tag,
+  .literal,
+  .title,
+  .section,
+  .doctag,
+  .type,
+  .name,
+  .strong {
+    font-weight: bold;
+  }
+  .emphasis {
+    font-style: italic;
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "hexo-theme-overdose",
+  "version": "0.0.0",
+  "description": "The theme which you must be overdosed.",
+  "private": true,
+  "dependencies": { }
+}

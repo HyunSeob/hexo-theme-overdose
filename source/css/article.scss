@@ -1,0 +1,58 @@
+@import "bourbon";
+@import "variables";
+
+article {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+
+  .header-img {
+    margin-top: (-$base-margin);
+  }
+  .post-title {
+    font-weight: normal;
+  }
+  .post-meta {
+    time {
+      color: $gray;
+      margin-right: 12px;
+    }
+    a.tag {
+      margin-right: 4px;
+    }
+  }
+
+  // aricle common styles
+  img {
+    width: calc(100% + #{$base-margin * 2});
+    margin-left: (-$base-margin);
+    margin-right: (-$base-margin);
+  }
+
+  blockquote {
+    margin-left: (-$base-margin);
+    margin-right: (-$base-margin);
+    background-color: $lighted-gray;
+    padding: $base-margin;
+    // line-height: 1.5em;
+    p {
+      margin: 0;
+      + p {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  code {
+    background-color: $lighted-sky;
+    padding: 2px 4px;
+  }
+
+  figure.highlight {
+    margin-left: (-$base-margin);
+    margin-right: (-$base-margin);
+    padding: $base-margin;
+  }
+}
