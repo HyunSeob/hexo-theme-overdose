@@ -1,0 +1,19 @@
+- var pageTitle = page.title || config.subtitle || '';
+- if (is_archive()) pageTitle = 'Archives';
+- if (is_tag()) pageTitle = 'Tag: ' + page.tag;
+- if (is_category()) pageTitle = 'Category: ' + page.category;
+- if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
+- if (is_year()) pageTitle += ': ' + page.year;
+- pageTitle += ' | ' + config.title;
+- var openGraph = open_graph({ image: page.thumbnail || page.photos[0], fb_app_id: theme.facebook, fb_admins: theme.fbAdmin, twitter_id: theme.twitter, google_plus: theme.googlePlus });
+
+meta(charset='UTF-8')
+meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+title= pageTitle
+if theme.stylesheets !== undefined && theme.stylesheets.length > 0
+  //- stylesheets list from config.yml
+  each url in theme.stylesheets
+    link(rel='stylesheet', href=url)
+| !{ canonical(config, page) }
+| !{ openGraph }
+link(rel="icon", href=config.root + 'img/favicon.png')

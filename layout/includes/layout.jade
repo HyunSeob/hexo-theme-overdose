@@ -10,13 +10,7 @@
 doctype html
 html(lang=config.language)
   head
-    meta(charset='UTF-8')
-    title= pageTitle
-    if theme.stylesheets !== undefined && theme.stylesheets.length > 0
-      //- stylesheets list from config.yml
-      each url in theme.stylesheets
-        link(rel='stylesheet', href=url)
-    link(rel="icon", href=config.root + 'img/favicon.png')
+    include head
   body
     #menu-outer
       nav#menu-inner
