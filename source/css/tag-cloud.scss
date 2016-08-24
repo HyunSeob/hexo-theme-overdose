@@ -1,0 +1,11 @@
+@import "variables";
+
+.tag-cloud {
+  margin-top: 8px;
+  a {
+    color: $darked-gray;
+    &:hover {
+      color: $primary-sky;
+    }
+  }
+}

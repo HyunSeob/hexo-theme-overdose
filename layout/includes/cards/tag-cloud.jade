@@ -1,0 +1,6 @@
+.area
+  .area__header
+    .area__header__label Tag cloud
+    a.area__header__action(href="/tag") View all
+  .tag-cloud
+    | !{ tagcloud(site.tags, { min_font: 12 }) }

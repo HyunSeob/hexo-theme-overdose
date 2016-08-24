@@ -66,6 +66,10 @@
 
 }
 
+.area + .area {
+  margin-top: $base-margin;
+}
+
 .area__header {
   overflow: hidden;
 }
