@@ -1,11 +1,16 @@
 @import "bourbon";
 
+// Colors
 $white: #FFF;
-$black: #222;
+$black: #454545;
 $gray: #999;
-$lighted-gray: #EEE;
+$darked-gray: #666;
+$lighted-gray: #F6F6F6;
 $primary-sky: #59ABE3;
 $darked-sky: darken($primary-sky, 20);
 $lighted-sky: lighten($primary-sky, 20);
 
+// Pixels
 $base-margin: 24px;
+$menu-height: 64px;
+$container-width: 1140px;

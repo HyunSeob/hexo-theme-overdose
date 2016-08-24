@@ -1,9 +1,6 @@
 extends includes/layout
 
 block content
-  #bg
-    #bg-img(style="background-image: url(#{page.background || '/images/default_bg.jpg'})")
-    #bg-overlay
   article#post.card
     if page.photos.length
       img.header-img(src="#{page.photos[0]}")

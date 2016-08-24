@@ -1,0 +1,10 @@
+nav.menu
+  .menu-inner
+    a.menu__item.menu__item--brand(
+      href="/"
+      title="Home"
+      rel="home")
+      img.menu__item--brand__image(src=theme.favicon alt=config.title)
+      span.menu__item--brand__label #{config.title}
+    each url, label in theme.menu
+      a.menu__item(href=url)= label

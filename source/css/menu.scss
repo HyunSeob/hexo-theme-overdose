@@ -1,0 +1,50 @@
+@import "variables";
+
+$icon-size: 40px;
+$icon-margin: ($menu-height - $icon-size) / 2;
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $menu-height;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 3;
+  border-bottom: 1px solid #ededed;
+}
+
+.menu-inner {
+  max-width: $container-width;
+  width: 100%;
+  margin: auto;
+}
+
+.menu__item {
+  color: $darked-gray;
+  font-size: 16px;
+  height: $menu-height;
+  line-height: $menu-height;
+  display: inline-block;
+  float: left;
+  margin-right: 24px;
+}
+
+.menu__item--brand {
+  color: $black;
+}
+
+.menu__item--brand__image {
+  width: $icon-size;
+  height: $icon-size;
+  margin: $icon-margin 16px $icon-margin 0;
+  display: inline-block;
+  float: left;
+}
+
+.menu__item--brand__label {
+  height: $menu-height;
+  line-height: $menu-height;
+  font-size: 18px;
+  display: inline-block;
+  float: left;
+}

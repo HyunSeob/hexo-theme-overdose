@@ -1,27 +1,22 @@
-
-- var pageTitle = page.title || config.subtitle || ''
-- if (is_archive()) pageTitle = 'Archives'
-- if (is_tag()) pageTitle = 'Tag: ' + page.tag
-- if (is_category()) pageTitle = 'Category: ' + page.category
-- if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
-- if (is_year()) pageTitle += ': ' + page.year
-- pageTitle += ' [ ' + config.title + ' ]'
-
 doctype html
 html(lang=config.language)
   head
     include head
   body
-    #menu-outer
-      nav#menu-inner
-        each url, label in theme.menu
-          a(href=url)= label
+    include menu
+    #page-background
+      //- #page-background__img(style="background-image: url(#{page.background || '/images/default_bg.jpg'})")
+      #page-background__overlay
     #content-outer
       #content-inner
-        if body
-          div!= body
-        else
-          block content
+        .column.column--wide
+          if body
+            div!= body
+          else
+            block content
+        .column.column--narrow
+          include cards/profile
+          include cards/recent-posts
     #bottom-outer
       #bottom-inner
         span Site construction by

@@ -1,0 +1,22 @@
+@import "bourbon";
+@import "variables";
+
+#recent-posts {
+  .recent-post-item {
+    margin-top: 8px;
+    a, time {
+      display: block;
+      line-height: 1.2em;
+    }
+    a {
+      font-size: 16px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    time {
+      font-size: 14px;
+      color: $darked-gray;
+    }
+  }
+}

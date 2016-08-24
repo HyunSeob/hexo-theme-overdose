@@ -1,0 +1,8 @@
+@import "bourbon";
+
+@mixin border-radius($value) {
+  @include border-top-radius($value);
+  @include border-right-radius($value);
+  @include border-bottom-radius($value);
+  @include border-left-radius($value);
+}

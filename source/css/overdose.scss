@@ -1,7 +1,7 @@
 @import "bourbon";
 @import "variables";
 
-// Global styles
+// Global common styles
 body {
   margin: 0;
   color: $black;
@@ -14,29 +14,5 @@ a {
   @include transition(color 0.3s ease);
   &:hover {
     color: $darked-sky;
-  }
-}
-
-#content-outer {
-  #content-inner {
-    #bg {
-      @include position(fixed, 0 0 0 0);
-      #bg-overlay {
-        display: block;
-        background-color: rgba(0,0,0,0.3);
-        @include position(absolute, 0 0 0 0);
-      }
-      #bg-img {
-        background-size: cover;
-        background-position: 50% 50%;
-        @include position(absolute, 0 0 0 0);
-      }
-    }
-    .card {
-      position: relative;
-      background-color: $white;
-      padding: 24px;
-      // @include border-radius(2px);
-    }
   }
 }

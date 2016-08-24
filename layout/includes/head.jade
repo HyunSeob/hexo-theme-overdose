@@ -5,7 +5,7 @@
 - if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
 - if (is_year()) pageTitle += ': ' + page.year;
 - pageTitle += ' | ' + config.title;
-- var openGraph = open_graph({ image: page.thumbnail || page.photos[0], fb_app_id: theme.facebook, fb_admins: theme.fbAdmin, twitter_id: theme.twitter, google_plus: theme.googlePlus });
+- var openGraph = open_graph({ image: page.thumbnail || (page.photos ? page.photos[0] : ''), fb_app_id: theme.facebook, fb_admins: theme.fbAdmin, twitter_id: theme.twitter, google_plus: theme.googlePlus });
 
 meta(charset='UTF-8')
 meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")

@@ -1,0 +1,50 @@
+@import "bourbon";
+@import "variables";
+@import "custom-mixin";
+
+$profile-image-size: 80px;
+
+.profile {
+  position: relative;
+  display: block;
+  min-height: $profile-image-size;
+  padding-left: $profile-image-size;
+}
+
+.profile__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: $profile-image-size;
+  height: $profile-image-size;
+  overflow: hidden;
+  img {
+    width: $profile-image-size;
+    height: $profile-image-size;
+    border-radius: 50%;
+    float: left;
+    @include transition(transform 0.3s ease);
+  }
+  &:hover {
+    img {
+      @include transform(scale(1.5));
+    }
+  }
+}
+
+.profile__meta {
+  height: $profile-image-size;
+  padding: 20px 0 0 16px;
+  box-sizing: border-box;
+}
+
+.profile__meta__author {
+  font-size: 24px;
+  color: $black;
+  display: block;
+}
+
+.profile__meta__description {
+  font-size: 14px;
+  color: $gray;
+}
