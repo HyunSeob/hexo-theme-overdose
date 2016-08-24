@@ -17,6 +17,8 @@ $icon-margin: ($menu-height - $icon-size) / 2;
   max-width: $container-width;
   width: 100%;
   margin: auto;
+  padding: 0 $base-margin;
+  box-sizing: border-box;
 }
 
 .menu__item {

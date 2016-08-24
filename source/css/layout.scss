@@ -34,28 +34,50 @@
   .column {
     float: left;
     box-sizing: border-box;
+    padding: 0 $base-margin / 2;
   }
 
   .column--wide {
     width: 66.6666%;
-    padding-right: $base-margin / 2;
+    padding-left: $base-margin;
   }
 
   .column--narrow {
     width: 33.3333%;
-    padding-left: $base-margin / 2;
+    padding-right: $base-margin;
   }
+}
 
-  .card {
-    position: relative;
-    background-color: $white;
-    padding: $base-margin;
-    margin-bottom: $base-margin;
-    @include border-radius(2px);
-  }
+.card {
+  position: relative;
+  background-color: $white;
+  padding: $base-margin;
+  margin-bottom: $base-margin;
+  border: 1px solid $lighted-gray;
+  @include border-radius(2px);
+}
 
-  .card__heading {
-    font-size: 24px;
-    margin-bottom: 8px;
-  }
+.card__heading {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.area {
+
+}
+
+.area__header {
+  overflow: hidden;
+}
+
+.area__header__label {
+  font-size: 18px;
+  color: $gray;
+  float: left;
+}
+
+.area__header__action {
+  font-size: 14px;
+  color: $gray;
+  float: right;
 }
