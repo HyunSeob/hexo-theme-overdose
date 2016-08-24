@@ -17,17 +17,8 @@ html(lang=config.language)
         .column.column--narrow
           include cards/profile
           include cards/recent-posts
+          hr
           include cards/tag-cloud
-    #bottom-outer
-      #bottom-inner
-        span Site construction by
-        span= ' ' + config.author + ' '
-        span using
-        a(href='http://hexo.io')
-          span hexo blog framework
-        span .
-        br
-        a(href=config.root) Home
     if theme.scripts !== undefined && theme.scripts.length > 0
       //- scripts list from config.yml
       each url in theme.scripts

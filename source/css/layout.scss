@@ -4,7 +4,7 @@
 
 #page-background {
   z-index: -1;
-  background-color: $lighted-gray;
+  background-color: $semi-white;
   @include position(fixed, 0 0 0 0);
 }
 
@@ -53,7 +53,7 @@
   background-color: $white;
   padding: $base-margin;
   margin-bottom: $base-margin;
-  border: 1px solid $lighted-gray;
+  border: 1px solid $semi-white;
   @include border-radius(2px);
 }
 
@@ -67,7 +67,6 @@
 }
 
 .area + .area {
-  margin-top: $base-margin;
 }
 
 .area__header {
