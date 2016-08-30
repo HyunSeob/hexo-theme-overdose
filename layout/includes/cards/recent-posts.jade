@@ -1,20 +1,21 @@
 if site.posts.length > 0
-  .recent-posts.area
+  .area
     .area__header
       .area__header__label Recent posts
-      a.area__header__action(href="/archives") View all
-    each post in site.posts.sort('date', -1).limit(5).toArray()
-      .recent-posts__item
-        a.recent-posts__item__image(
-          href=config.root + post.path
-          title=post.title)
-          .recent-posts__item__image__inner(
-            style="background-image: url(#{post.thumbnail || post.photos[0]})")
-        .recent-posts__item__meta
-          a.recent-posts__item__meta__link(
-            href=config.root + post.path
-          )= post.title
-          if post.date
-            time.recent-posts__item__meta__time(
-              datetime=post.date.toJSON()
-            )= date(post.date, date_format)
+    .area__body
+      ul.recent-posts
+        each post in site.posts.sort('date', -1).limit(5).toArray()
+          li.recent-posts__item
+            a.recent-posts__item__image(
+              href=config.root + post.path
+              title=post.title)
+              .recent-posts__item__image__inner(
+                style="background-image: url(#{post.thumbnail || post.photos[0]})")
+            .recent-posts__item__meta
+              a.recent-posts__item__meta__link(
+                href=config.root + post.path
+              )= post.title
+              if post.date
+                time.recent-posts__item__meta__time(
+                  datetime=post.date.toJSON()
+                )= date(post.date, date_format)

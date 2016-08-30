@@ -1,41 +1,56 @@
 @import "variables";
 
+$menu-width: 1140px;
 $icon-size: 40px;
 $icon-margin: ($menu-height - $icon-size) / 2;
 
 .menu {
-  position: fixed;
-  top: 0;
   width: 100%;
   height: $menu-height;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 3;
   border-bottom: 1px solid #ededed;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-inner {
-  max-width: $container-width;
   width: 100%;
+  max-width: $menu-width;
   margin: auto;
   padding: 0 $base-margin;
   box-sizing: border-box;
 }
 
+.menu__left-area {
+  float: left;
+}
+
+.menu__right-area {
+  float: right;
+}
+
 .menu__item {
+  display: inline-block;
+  float: left;
+  margin-right: $base-margin;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__item__link {
   color: $darked-gray;
   font-size: 16px;
   height: $menu-height;
   line-height: $menu-height;
-  display: inline-block;
-  float: left;
-  margin-right: 24px;
 }
 
-.menu__item--brand {
+.menu__item__link--brand {
   color: $black;
 }
 
-.menu__item--brand__image {
+.menu__item__link--brand__image {
   width: $icon-size;
   height: $icon-size;
   margin: $icon-margin 16px $icon-margin 0;
@@ -43,7 +58,7 @@ $icon-margin: ($menu-height - $icon-size) / 2;
   float: left;
 }
 
-.menu__item--brand__label {
+.menu__item__link--brand__label {
   height: $menu-height;
   line-height: $menu-height;
   font-size: 18px;

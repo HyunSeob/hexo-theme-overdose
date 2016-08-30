@@ -1,42 +1,21 @@
 @import "bourbon";
 @import "variables";
 
-article {
+.post {
   position: relative;
   z-index: 2;
-  // width: 100%;
-  // max-width: 640px;
-  // margin: auto;
+  padding: 24px;
 
-  .header-img {
-    margin-top: (-$base-margin);
-  }
-  .post-title {
-    font-weight: normal;
-  }
-  .post-meta {
-    time {
-      color: $gray;
-      margin-right: 12px;
-    }
-    a.tag {
-      margin-right: 4px;
-    }
-  }
-
-  // aricle common styles
+  // Post common styles
   img {
-    width: calc(100% + #{$base-margin * 2});
-    margin-left: (-$base-margin);
-    margin-right: (-$base-margin);
+    max-width: 100%;
   }
 
   blockquote {
-    margin-left: (-$base-margin);
-    margin-right: (-$base-margin);
     background-color: $semi-white;
     padding: $base-margin;
-    // line-height: 1.5em;
+    margin-left: 0;
+    margin-right: 0;
     p {
       margin: 0;
       + p {
@@ -48,11 +27,51 @@ article {
   code {
     background-color: $lighted-sky;
     padding: 2px 4px;
+    border-radius: 2px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   figure.highlight {
-    margin-left: (-$base-margin);
-    margin-right: (-$base-margin);
     padding: $base-margin;
+    margin-left: 0;
+    margin-right: 0;
   }
+}
+
+.post__title {
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
+
+.post__image {
+  margin: $base-margin 0;
+}
+
+.post__meta {
+  font-size: 14px;
+  color: $gray;
+}
+
+.post__meta__categories {
+  float: left;
+}
+
+.post__meta__categories__item {
+  color: $gray;
+  &:hover {
+    color: $primary-sky;
+  }
+  &:after {
+    content: '>';
+    margin: 0 8px;
+    color: $gray;
+  }
+  &:last-child:after {
+    content: '';
+  }
+}
+
+.post__meta__time {
+  float: right;
 }

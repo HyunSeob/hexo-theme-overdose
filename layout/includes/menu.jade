@@ -1,10 +1,14 @@
-nav.menu
+ul.menu
   .menu-inner
-    a.menu__item.menu__item--brand(
-      href="/"
-      title="Home"
-      rel="home")
-      img.menu__item--brand__image(src=theme.favicon alt=config.title)
-      span.menu__item--brand__label #{config.title}
-    each url, label in theme.menu
-      a.menu__item(href=url)= label
+    .menu__left-area
+      li.menu__item
+        a.menu__item__link--brand(
+          href="/"
+          title="Home"
+          rel="home")
+          img.menu__item__link--brand__image(src=theme.favicon alt=config.title)
+          span.menu__item__link--brand__label #{config.title}
+    .menu__right-area
+      each url, label in theme.menu
+        li.menu__item
+          a.menu__item__link(href=url)= label

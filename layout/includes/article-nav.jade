@@ -1,0 +1,21 @@
+nav.article-nav
+  if page.prev && page.prev.path
+    a.article-nav__item(
+      rel="prev"
+      href=url_for(page.prev.path))
+      .article-nav__item__background(style="background-image: url(#{page.prev.photos[0]})")
+      .article-nav__item__label 'Prev'
+      .article-nav__item__title=page.prev.title
+    
+  
+  //- if page.prev_link
+  //-   a(class='prev', href=url_for(page.prev_link))
+  //-     |!= '&larr; Prev'
+  //- else if page.prev && page.prev.path
+  //-   a(class='prev', href=url_for(page.prev.path))
+  //-     |!= '&larr; Prev'
+  //-   
+  //- if page.next_link
+  //-   a(class='next', href=url_for(page.next_link))!= 'Next &rarr;'
+  //- else if page.next && page.next.path
+  //-   a(class='next', href=url_for(page.next.path))!= 'Next &rarr;'

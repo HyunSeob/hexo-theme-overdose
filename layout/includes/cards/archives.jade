@@ -1,0 +1,11 @@
+.area
+  .area__header
+    .area__header__label Archives
+    a.area__header__action(href="/archives") View all
+  .area__body
+    | !{list_archives({ type: 'monthly', format: theme.dateformat || 'MMMM YYYY' })}
+    //- ul.archives
+    //-   each archive in _archives
+    //-     - console.log(archive);
+    //-     li.archives__item
+    //-       a.archives__item__link(href=archive.month)

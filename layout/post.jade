@@ -1,15 +1,18 @@
 extends includes/layout
 
 block content
-  article#post.card
+  article.post
+    h1.post__title= page.title
+    .post__meta
+      if page.categories.length
+        .post__meta__categories
+          - page.categories.each(function(category) {
+              a.post__meta__categories__item(href=url_for(category.path))= category.name
+          - })
+      time.post__meta__time(datetime=date_xml(page.date))= full_date(page.date, 'MMMM Do YYYY, h:mm:ss a')
     if page.photos.length
-      img.header-img(src="#{page.photos[0]}")
-    h1.post-title= page.title
-    .post-meta
-      time(datetime=date_xml(page.date))= 'Written at ' + date(page.date)
-      - page.tags.each(function(tag) {
-        a.tag(href='/tags/' + tag.name + '/' rel="tag")= '#' + tag.name
-      - })
+      img.post__image(src="#{page.photos[0]}" alt="Post Image")
+    
     != page.content
     
     //- Below lines are for disqus.
@@ -22,4 +25,5 @@ block content
           s.setAttribute('data-timestamp', +new Date());
           (d.head || d.body).appendChild(s);
         })();
-  include includes/pagination
+      noscript Enable JavaScript to see comments. 
+  include includes/article-nav
