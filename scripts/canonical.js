@@ -1,9 +1,9 @@
 /**
-* Canonical Helper
-* @description Generate canonical tag.
-* @example
-*     canonical(config, page);
-*/
+ * Canonical Helper
+ * @description Generate canonical tag.
+ * @example
+ *     canonical(config, page);
+ */
 
 hexo.extend.helper.register('canonical', function (config, page) {
   var base_url = config.url;

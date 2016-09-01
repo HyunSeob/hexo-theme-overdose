@@ -4,16 +4,41 @@ block content
   article.post
     h1.post__title= page.title
     .post__meta
+      time.post__meta__time(datetime=date_xml(page.date))= full_date(page.date)
       if page.categories.length
         .post__meta__categories
           - page.categories.each(function(category) {
               a.post__meta__categories__item(href=url_for(category.path))= category.name
           - })
-      time.post__meta__time(datetime=date_xml(page.date))= full_date(page.date, 'MMMM Do YYYY, h:mm:ss a')
     if page.photos.length
       img.post__image(src="#{page.photos[0]}" alt="Post Image")
+    else
+      hr
     
     != page.content
+    
+    if page.tags.length
+      .post__tags
+       - page.tags.each(function(tag) {
+           a.post__tags__item(href=url_for(tag.path))= tag.name
+       - })
+
+    .post__author
+      img.post__author__image(src=theme.profile.image alt=theme.profile.author)
+      a.post__author__link(
+        href=theme.profile.link
+        title="About #{theme.profile.author}"
+        rel="author"
+      )= theme.profile.author
+      p.post__author__desc= theme.profile.description
+      .post__author__socials
+        each url, label in theme.profile.social
+          a.post__author__socials__item(
+            href=url
+            title="#{label}"
+            target="_blank")
+            i(class="fa fa-#{label}")
+      
     
     //- Below lines are for disqus.
     if theme.disqus
@@ -26,4 +51,18 @@ block content
           (d.head || d.body).appendChild(s);
         })();
       noscript Enable JavaScript to see comments. 
-  include includes/article-nav
+    
+  - var relatedPosts = related_posts(page, 3);
+  
+  hr
+  
+  section.related-posts
+    h3 Related posts
+    each post in relatedPosts
+      .related-posts__item__wrapper
+        a.related-posts__item(href=url_for(post.path))
+          .related-posts__item__background(style="background-image: url('#{post.photos[0] || theme.default }')")
+          .related-posts__item__overlay
+          span.related-posts__item__title= post.title
+  
+  hr

@@ -9,13 +9,14 @@
 }
 
 .content-outer {
-  margin-top: $base-margin;
+  margin-top: $base-margin + $menu-height * 2;
+  @media #{$desktop} {
+    margin-top: $base-margin + $menu-height;
+  }
 }
 
 .content-inner {
-  max-width: $container-width;
   width: 100%;
-  margin: auto;
 }
 
 .content-inner {
