@@ -1,14 +1,22 @@
+-
+  function isIncluding(target, current) {
+    var _target = target.slice(1, target.length);
+    return current.includes(_target);
+  }
+
 ul.menu#menu
   .menu-inner
     .menu__left-area
       li.menu__item
-        a.menu__item__link--brand(
+        a.menu__item__link.menu__item__link--brand(
           href="/"
           title="Home"
           rel="home")
-          img.menu__item__link--brand__image(src=theme.favicon alt=config.title)
-          span.menu__item__link--brand__label #{config.title}
+          img.menu__item__link--brand__image(
+            src=theme.favicon
+            alt=config.title)
+          span.menu__item__link--brand__label= config.title
     .menu__right-area
       each url, label in theme.menu
-        li.menu__item
+        li.menu__item(class=isIncluding(url, page.path) ? 'menu__item--active' : '')
           a.menu__item__link(href=url)= label

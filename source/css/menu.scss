@@ -56,20 +56,48 @@ $icon-margin: ($menu-height - $icon-size) / 2;
 }
 
 .menu__item {
+  position: relative;
   display: inline-block;
   float: left;
   margin-right: $base-margin;
   &:last-child {
     margin-right: 0;
   }
+  &:after {
+    content: '';
+    @include position(absolute, null 0 0 0);
+    height: 2px;
+    background-color: transparent;
+    @include transform(translateY(2px));
+    @include transition(background-color 0.3s ease, transform 0.3s ease);
+  }
+  &:hover {
+    .menu__item__link {
+      color: $gray;
+    }
+    &:after {
+      background-color: $gray;
+      @include transform(translateY(0));
+    }
+  }
   @media #{$mobile} {
     float: none;
   }
 }
 
+.menu__item--active .menu__item__link {
+  color: $primary-sky;
+}
+
+.menu__item--active:after {
+  background-color: $primary-sky;
+  @include transform(translateY(0));
+}
+
 .menu__item__link {
   color: $darked-gray;
   font-size: 1rem;
+  display: inline-block;
   height: $menu-height;
   line-height: $menu-height;
 }
