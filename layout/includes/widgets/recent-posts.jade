@@ -1,0 +1,5 @@
+h3.widgets__item__heading Recent posts
+ul.recent-posts
+  each post in site.posts.sort('date', -1).limit(5).toArray()
+    li.recent-posts__item
+      a(href=url_for(post.path))= post.title

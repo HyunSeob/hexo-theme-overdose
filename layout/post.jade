@@ -54,8 +54,6 @@ block content
     
   - var relatedPosts = related_posts(page, 3);
   
-  hr
-  
   section.related-posts
     h3 Related posts
     each post in relatedPosts
@@ -64,5 +62,3 @@ block content
           .related-posts__item__background(style="background-image: url('#{post.photos[0] || theme.default }')")
           .related-posts__item__overlay
           span.related-posts__item__title= post.title
-  
-  hr

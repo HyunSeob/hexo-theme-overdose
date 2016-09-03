@@ -1,4 +1,4 @@
-_ = require('lodash');
+var _ = require('lodash');
 
 function parseId(postData, type) {
   type = type || 'tags';

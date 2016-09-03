@@ -1,0 +1,64 @@
+@import "bourbon";
+@import "variables";
+
+.widgets {
+  background-color: $semi-white;
+}
+
+.widgets-inner {
+  width: 100%;
+  max-width: $container-width;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  @media #{$desktop} {
+    padding: 0 0.5rem;
+  }
+}
+
+.widgets__item {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  @media #{$desktop} {
+    width: 33.33%;
+    padding: 0 0.5rem;
+  }
+
+  // Widgets common styles
+  ul {
+    padding: 0;
+    list-style: none;
+    ul {
+      padding-left: 1rem;
+      li:before {
+        padding-right: 0.25rem;
+        content: '-';
+      }
+    }
+  }
+
+  a {
+    color: $darked-gray;
+    &:hover {
+      color: $primary-sky;
+    }
+  }
+}
+
+.widgets__item__heading {
+  margin-top: 0;
+}
+
+.category-list-count, .archive-list-count, .tag-list-count {
+  font-size: 0.75em;
+  padding-left: 0.5em;
+  &:before {
+    content: '(';
+  }
+  &:after {
+    content: ')';
+  }
+}

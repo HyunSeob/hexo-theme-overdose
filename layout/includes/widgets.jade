@@ -1,0 +1,20 @@
+.widgets
+  .widgets-inner
+    // Jade not supports Dynamic Inclusion.
+    // This code is just hack.
+    each widget in theme.widgets
+      if widget === 'tag-cloud'
+        .widgets__item
+          include widgets/tag-cloud
+      else if widget === 'categories'
+        .widgets__item
+          include widgets/categories
+      else if widget === 'recent-posts'
+        .widgets__item
+          include widgets/recent-posts
+      else if widget === 'archives'
+        .widgets__item
+          include widgets/archives
+      else if widget === 'tags'
+        .widgets__item
+          include widgets/tags

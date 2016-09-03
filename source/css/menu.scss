@@ -1,6 +1,5 @@
 @import "variables";
 
-$menu-width: 72rem;
 $icon-size: 2.5rem;
 $icon-margin: ($menu-height - $icon-size) / 2;
 
@@ -15,12 +14,12 @@ $icon-margin: ($menu-height - $icon-size) / 2;
   position: fixed;
   top: 0;
   z-index: 3;
-  @include transition(transform 0.1s ease);
+  @include transition(transform 0.3s ease);
 }
 
 .menu-inner {
   width: 100%;
-  max-width: $menu-width;
+  max-width: $container-width;
   margin: auto;
   padding: 0 $base-margin;
   box-sizing: border-box;
