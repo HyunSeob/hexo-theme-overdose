@@ -1,7 +1,7 @@
 .widgets
   .widgets-inner
-    // Jade not supports Dynamic Inclusion.
-    // This code is just hack.
+    // Jade doesn't support dynamic inclusion with `each`.
+    // So, I just hard coded the file names that will be included.
     each widget in theme.widgets
       if widget === 'tag-cloud'
         .widgets__item
