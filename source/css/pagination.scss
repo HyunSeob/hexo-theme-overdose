@@ -1,0 +1,31 @@
+@import "variables";
+
+.pagination {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+  .current, a {
+    padding: 0 0.25rem;
+    margin: 0 0.25rem;
+    border-bottom: 1px solid;
+  }
+
+  .current {
+    color: $black;
+  }
+
+  .space {
+    color: $gray;
+  }
+
+  a {
+    color: $gray;
+    border-color: transparent;
+    @include transition(border-color 0.3s ease, color 0.3s ease);
+    &:hover {
+      color: $primary-sky;
+      border-color: $primary-sky;
+    }
+  }
+
+}

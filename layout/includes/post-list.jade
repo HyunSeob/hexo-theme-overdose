@@ -1,7 +1,9 @@
 - var truncOptions = { length: 150, separator: ' ' };
+- var perPage = page.per_page || config.per_page;
+- var skips = perPage * (page.current - 1);
 
 section.post-list
-  each post in site.posts.sort('date', -1).limit(5).toArray()
+  each post in site.posts.sort('date', -1).skip(skips).limit(perPage).toArray()
     article.post-list__item
       .post-list__item__col-1
         a.post-list__item__link(href=url_for(post.path))
