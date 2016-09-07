@@ -1,0 +1,22 @@
+- var truncOptions = { length: 150, separator: ' ' };
+
+section.post-list
+  each post in site.posts.sort('date', -1).limit(5).toArray()
+    article.post-list__item
+      .post-list__item__col-1
+        a.post-list__item__link(href=url_for(post.path))
+          .post-list__item__link__background(style="background-image: url('#{ post.photos[0] || theme.default }')")
+      .post-list__item__col-2
+        .post-list__item__categories
+          each category, index in post.categories.data
+            a.post-list__item__categories__item(
+              href=url_for(category.path)
+            )= category.name
+            unless index === post.categories.data.length - 1 
+              span.post-list__item__categories__separator >
+        h3.post-list__item__title
+          a(
+            href=url_for(post.path)
+            title=post.title
+          )= post.title
+        p.post-list__item__description= truncate(strip_html(post.content), truncOptions)

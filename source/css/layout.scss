@@ -9,9 +9,9 @@
 }
 
 .content-outer {
-  margin-top: $base-margin + $menu-height * 2;
+  margin-top: $menu-height * 2;
   @media #{$desktop} {
-    margin-top: $base-margin + $menu-height;
+    margin-top: $menu-height;
   }
 }
 

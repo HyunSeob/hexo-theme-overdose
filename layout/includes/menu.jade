@@ -1,5 +1,5 @@
 -
-  function isIncluding(target, current) {
+  function equalPath(target, current) {
     var _target = target.slice(1, target.length);
     return current.includes(_target);
   }
@@ -18,5 +18,5 @@ ul.menu#menu
           span.menu__item__link--brand__label= config.title
     .menu__right-area
       each url, label in theme.menu
-        li.menu__item(class=isIncluding(url, page.path) ? 'menu__item--active' : '')
+        li.menu__item(class=equalPath(url, page.path) ? 'menu__item--active' : '')
           a.menu__item__link(href=url)= label

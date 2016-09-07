@@ -21,7 +21,7 @@ $icon-margin: ($menu-height - $icon-size) / 2;
   width: 100%;
   max-width: $container-width;
   margin: auto;
-  padding: 0 $base-margin;
+  padding: 0 1rem;
   box-sizing: border-box;
   @media #{$mobile} {
     padding: 0;
