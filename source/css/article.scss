@@ -60,15 +60,22 @@
     border-collapse: collapse;
     thead tr th{
       border-bottom: 2px solid $semi-white;
+      padding: 0.25rem 0;
     }
     tbody tr {
       td {
         border-bottom: 1px solid $semi-white;
+        padding: 0.25rem 0;
       }
       &:last-child td {
         border-color: $gray;
       }
     }
+  }
+
+  iframe {
+    display: block;
+    margin: 1rem 0;
   }
 
   ul {
