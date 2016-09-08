@@ -37,5 +37,7 @@ link(rel="stylesheet" href="/css/index.css")
 | !{ openGraph }
 link(rel="icon", href=theme.favicon || 'images/favicon.ico')
 
+if theme.google_site_verification
+  meta(name="google-site-verification" content="#{theme.google_site_verification}")
 if theme.naver_site_verification
   meta(name="naver-site-verification" content="#{theme.naver_site_verification}")

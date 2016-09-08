@@ -21,7 +21,4 @@ html(lang=config.language)
         ga('create', '#{theme.google_analytics}', 'auto');
         ga('send', 'pageview');
       
-    if theme.scripts !== undefined && theme.scripts.length > 0
-      //- scripts list from config.yml
-      each url in theme.scripts
-        script(src=url)
+    script(src="/js/dynamic-menu.js")
