@@ -11,14 +11,6 @@ html(lang=config.language)
           div!= body
         else
           block content
-        //- .column.column--narrow
-        //-   include cards/profile
-        //-   include cards/recent-posts
-        //-   hr
-        //-   include cards/tag-cloud
-        //-   hr
-        //-   include cards/archives
-    include widgets
     include footer
     if theme.scripts !== undefined && theme.scripts.length > 0
       //- scripts list from config.yml

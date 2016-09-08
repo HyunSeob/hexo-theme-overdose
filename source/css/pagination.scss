@@ -7,7 +7,7 @@
   .current, a {
     padding: 0 0.25rem;
     margin: 0 0.25rem;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
   }
 
   .current {
@@ -27,5 +27,4 @@
       border-color: $primary-sky;
     }
   }
-
 }
