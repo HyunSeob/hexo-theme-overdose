@@ -1,0 +1,49 @@
+# main menu navigation
+menu:
+  Home: /
+  About: /about
+  Archives: /archives
+
+# Images
+favicon: /images/icon.png
+default: /images/default.jpg
+
+# availableFontList: [
+#   'noto-sans-kr',
+#   'spoqa-han-sans-kr',
+#   'spoqa-han-sans-jp'
+# ]
+# If you don't want font, you shouldn't specify the font.
+font: noto-sans-kr
+
+profile:
+  gravatar:
+  image: /images/avatar.png
+  link: /about
+  location: 'Seoul, Korea'
+  description: 언제쯤 고수가 될까.
+  social:
+    github: https://github.com/hyunseob
+    facebook: https://www.facebook.com/hyunseob.lee.7
+    linkedin: https://www.linkedin.com/in/hyunseoblee
+    instagram: https://www.instagram.com/hyunseob_lee/
+    twitter: https://twitter.com/HyunSeob_
+    rss: http://feedly.com/i/subscription/feed/http://hyunseob.github.io/atom.xml
+
+# Footer widgets
+# Don't use over than 3 widgets.
+# availableWidgetList: [
+#   'archives',
+#   'categories',
+#   'recent-posts',
+#   'tag-cloud',
+#   'tags'
+# ]
+widgets:
+  - recent-posts
+  - archives
+  - categories
+
+google_analytics:
+google_site_verification:
+naver_site_verification:
