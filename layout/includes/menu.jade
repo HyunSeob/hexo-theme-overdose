@@ -4,10 +4,10 @@
     return current.includes(_target);
   }
 
-ul.menu#menu
+nav#menu.menu(role="navigation")
   .menu-inner
     .menu__left-area
-      li.menu__item
+      .menu__item
         a.menu__item__link.menu__item__link--brand(
           href="/"
           title="Home"
@@ -18,5 +18,5 @@ ul.menu#menu
           span.menu__item__link--brand__label= config.title
     .menu__right-area
       each url, label in theme.menu
-        li.menu__item(class=equalPath(url, page.path) ? 'menu__item--active' : '')
+        .menu__item(class=equalPath(url, page.path) ? 'menu__item--active' : '')
           a.menu__item__link(href=url)= label
