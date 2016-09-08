@@ -52,18 +52,18 @@
   @include transition(transform 0.3s ease);
 }
 
-.post-list__item__categories {
+.post-list__item__meta {
 
 }
 
-.post-list__item__categories__item {
+.post-list__item__meta__link {
   color: $gray;
   &:hover {
     color: $primary-sky;
   }
 }
 
-.post-list__item__categories__separator {
+.post-list__item__meta__label {
   color: $gray;
   margin: 0 0.5rem;
 }

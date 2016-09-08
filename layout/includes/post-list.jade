@@ -1,21 +1,52 @@
 - var truncOptions = { length: 150, separator: ' ' };
-- var perPage = page.per_page || config.per_page;
-- var skips = perPage * (page.current - 1);
+-
+  function getPostList() {
+    var perPage = page.per_page || config.per_page;
+    var skips = perPage * (page.current - 1);
+    if (is_home()) {
+      return site.posts
+        .sort('date', -1)
+        .skip(skips)
+        .limit(perPage)
+        .toArray();
+    } else {
+      return page.posts
+        .limit(perPage)
+        .toArray();
+    }
+  }
 
 section.post-list
-  each post in site.posts.sort('date', -1).skip(skips).limit(perPage).toArray()
+  if !is_home()
+    header
+      if is_archive()
+        if page.month
+          h2 Archives: #{page.month}/#{page.year}
+        else if page.year
+          h2 Archives: #{page.year}
+        else
+          h2 Archives
+      else if is_tag()
+        h2 Tag: #{page.tag}
+      else if is_category()
+        h2 Category: #{page.category}
+    hr
+      
+  each post in getPostList()
     article.post-list__item
       .post-list__item__col-1
         a.post-list__item__link(href=url_for(post.path))
           .post-list__item__link__background(style="background-image: url('#{ post.photos[0] || theme.default }')")
       .post-list__item__col-2
-        .post-list__item__categories
-          each category, index in post.categories.data
-            a.post-list__item__categories__item(
-              href=url_for(category.path)
-            )= category.name
-            unless index === post.categories.data.length - 1 
-              span.post-list__item__categories__separator >
+        .post-list__item__meta
+          if post.categories && post.categories.length
+            each category, index in post.categories.data
+              a.post-list__item__meta__link(
+                href=url_for(category.path)
+              )= category.name
+              unless index === post.categories.data.length - 1 
+                span.post-list__item__meta__label >
+            
         h3.post-list__item__title
           a(
             href=url_for(post.path)

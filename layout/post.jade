@@ -1,57 +1,8 @@
 extends includes/layout
 
 block content
-  article.post
-    h1.post__title= page.title
-    .post__meta
-      time.post__meta__time(datetime=date_xml(page.date))= full_date(page.date)
-      if page.categories.length
-        .post__meta__categories
-          - page.categories.each(function(category) {
-              a.post__meta__categories__item(href=url_for(category.path))= category.name
-          - })
-    if page.photos.length
-      img.post__image(src="#{page.photos[0]}" alt="Post Image")
-    else
-      hr
-    
-    != page.content
-    
-    if page.tags.length
-      .post__tags
-       - page.tags.each(function(tag) {
-           a.post__tags__item(href=url_for(tag.path))= tag.name
-       - })
-
-    .post__author
-      img.post__author__image(src=theme.profile.image alt=theme.profile.author)
-      a.post__author__link(
-        href=theme.profile.link
-        title="About #{theme.profile.author}"
-        rel="author"
-      )= theme.profile.author
-      p.post__author__desc= theme.profile.description
-      .post__author__socials
-        each url, label in theme.profile.social
-          a.post__author__socials__item(
-            href=url
-            title="#{label}"
-            target="_blank")
-            i(class="fa fa-#{label}")
+  include includes/article
       
-    
-    //- Below lines are for disqus.
-    if theme.disqus
-      #disqus_thread
-      script.
-        (function() {
-          var d = document, s = d.createElement('script');
-          s.src = '//#{theme.disqus}.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-      noscript Enable JavaScript to see comments. 
-    
   - var relatedPosts = related_posts(page, 3);
   
   section.related-posts

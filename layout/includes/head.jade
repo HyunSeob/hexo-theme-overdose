@@ -5,15 +5,37 @@
 - if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
 - if (is_year()) pageTitle += ': ' + page.year;
 - pageTitle = pageTitle ? pageTitle += ' | ' + config.title : config.title;
-- var openGraph = open_graph({ image: page.thumbnail || (page.photos ? page.photos[0] : ''), fb_app_id: theme.facebook, fb_admins: theme.fbAdmin, twitter_id: theme.twitter, google_plus: theme.googlePlus });
+-
+  var openGraph = open_graph({
+    image: (page.photos ? page.photos[0] : null) || theme.default || page.thumbnail,
+    fb_app_id: theme.facebook,
+    fb_admins: theme.fbAdmin,
+    twitter_id: theme.twitter,
+    google_plus: theme.googlePlus
+  });
 
 meta(charset='UTF-8')
 meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+
 title= pageTitle
-if theme.stylesheets !== undefined && theme.stylesheets.length > 0
-  //- stylesheets list from config.yml
-  each url in theme.stylesheets
-    link(rel='stylesheet', href=url)
+
+if theme.font === 'spoqa-han-sans-kr'
+  link(rel="stylesheet" href="/vendor/spoqa-han-sans/css/SpoqaHanSans-kr.css")
+else if theme.font === 'spoqa-han-sans-jp'
+  link(rel="stylesheet" href="/vendor/spoqa-han-sans/css/SpoqaHanSans-jp.css")
+else if theme.font === 'noto-sans-kr'
+  link(rel="stylesheet" href="/vendor/noto-sans-kr/styles.css")
+  
+if theme.font
+  link(rel="stylesheet" href="/css/font.css")
+  
+link(rel="stylesheet" href="/vendor/normalize.min.css")
+link(rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css")
+link(rel="stylesheet" href="/css/index.css")
+
 | !{ canonical(config, page) }
 | !{ openGraph }
-link(rel="icon", href=config.root + 'img/favicon.png')
+link(rel="icon", href=theme.favicon || 'images/favicon.ico')
+
+if theme.naver_site_verification
+  meta(name="naver-site-verification" content="#{theme.naver_site_verification}")

@@ -1,7 +1,7 @@
 @import "bourbon";
 @import "variables";
 
-.post {
+.article {
   position: relative;
   padding: 1rem;
   overflow: hidden;
@@ -12,7 +12,7 @@
     padding-top: 0;
   }
 
-  // Post common styles
+  // Article common styles
   img {
     display: block;
     max-width: 100%;
@@ -76,30 +76,29 @@
   }
 }
 
-.post__title {
-  line-height: 1.5em;
-  margin-bottom: 0;
+.article__title {
+  line-height: 1.2em;
 }
 
-.post__image {
+.article__image {
   margin: $base-margin 0;
 }
 
-.post__meta {
+.article__meta {
   font-size: 14px;
   color: $gray;
   overflow: hidden;
   width: 100%;
 }
 
-.post__meta__time {
+.article__meta__time {
   float: left;
   @media #{$mobile} {
     width: 100%;
   }
 }
 
-.post__meta__categories {
+.article__meta__categories {
   float: right;
   @media #{$mobile} {
     float: left;
@@ -107,26 +106,23 @@
   }
 }
 
-.post__meta__categories__item {
+.article__meta__categories__item {
   color: $gray;
   &:hover {
     color: $primary-sky;
   }
-  &:after {
-    content: '>';
-    margin: 0 8px;
-    color: $gray;
-  }
-  &:last-child:after {
-    content: '';
-  }
 }
 
-.post__tags {
+.article__meta__categories__separator {
+  margin: 0 8px;
+  color: $gray;
+}
+
+.article__tags {
   margin: 2rem 0;
 }
 
-.post__tags__item {
+.article__tags__item {
   background-color: $lighted-gray;
   color: $black;
   border-radius: 2px;
@@ -141,7 +137,7 @@
   }
 }
 
-.post__author {
+.article__author {
   position: relative;
   padding: 2rem 0 2rem 8rem;
   margin-bottom: 2rem;
@@ -149,7 +145,7 @@
   border-bottom: 1px solid $semi-white;
 }
 
-.post__author__image {
+.article__author__image {
   position: absolute;
   left: 0;
   top: 2rem;
@@ -157,7 +153,7 @@
   height: 6rem;
 }
 
-.post__author__link {
+.article__author__link {
   font-size: 1.5rem;
   font-weight: bold;
   color: $black;
@@ -166,15 +162,15 @@
   }
 }
 
-.post__author__desc {
+.article__author__desc {
   margin: 0;
 }
 
-.post__author__socials {
+.article__author__socials {
   margin-top: 1rem;
 }
 
-.post__author__socials__item {
+.article__author__socials__item {
   color: $gray;
   font-size: 1.25rem;
   margin-right: 0.75rem;

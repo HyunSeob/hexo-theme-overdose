@@ -4,17 +4,17 @@
     // So, I just hard coded the file names that will be included.
     each widget in theme.widgets
       if widget === 'tag-cloud'
-        nav.widgets__item
+        .widgets__item
           include widgets/tag-cloud
       else if widget === 'categories'
-        nav.widgets__item
+        .widgets__item
           include widgets/categories
       else if widget === 'recent-posts'
-        nav.widgets__item
+        .widgets__item
           include widgets/recent-posts
       else if widget === 'archives'
-        nav.widgets__item
+        .widgets__item
           include widgets/archives
       else if widget === 'tags'
-        nav.widgets__item
+        .widgets__item
           include widgets/tags

@@ -48,7 +48,6 @@
 
   a {
     color: $darked-gray;
-    float: left;
     &:hover {
       color: $primary-sky;
     }
@@ -57,6 +56,10 @@
 
 .widgets__item__heading {
   margin-top: 0;
+}
+
+.category-list-link, .archive-list-link, .tag-list-link {
+  float: left;
 }
 
 .category-list-count, .archive-list-count, .tag-list-count {
