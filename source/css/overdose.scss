@@ -13,6 +13,7 @@ body {
   margin: 0;
   color: $black;
   line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -28,4 +29,8 @@ hr {
   margin: $base-margin 0;
   border: 0;
   border-bottom: 1px solid $lighted-gray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
 }

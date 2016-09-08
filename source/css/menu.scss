@@ -118,5 +118,5 @@ $icon-margin: ($menu-height - $icon-size) / 2;
   line-height: $menu-height;
   display: inline-block;
   float: left;
-  font-weight: bold;
+  font-weight: $bold-font;
 }

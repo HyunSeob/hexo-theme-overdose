@@ -5,6 +5,9 @@
   text-align: center;
   padding: 1rem 0;
   .current, a {
+    display: inline-block;
+    height: 1.5rem;
+    line-height: 1.5rem;
     padding: 0 0.25rem;
     margin: 0 0.25rem;
     border-bottom: 2px solid;

@@ -162,7 +162,7 @@
 
 .article__author__link {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: $bold-font;
   color: $black;
   &:hover {
     color: $primary-sky;
@@ -235,7 +235,7 @@
 .related-posts__item__title {
   font-size: 1.25rem;
   line-height: 1.5em;
-  font-weight: bold;
+  font-weight: $bold-font;
   color: $white;
   padding: 0 1rem;
   @include position(absolute, 50% 0 null 0);

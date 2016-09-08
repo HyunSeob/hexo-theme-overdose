@@ -2,10 +2,6 @@
 @import "variables";
 @import "custom-mixin";
 
-body {
-  -webkit-font-smoothing: antialiased;
-}
-
 .page-background {
   z-index: -1;
   background-color: $white;
