@@ -17,7 +17,7 @@ default: /images/default.jpg
 font:
 
 profile:
-  image:
+  image: /images/avatar.jpg
   gravatar:
   link:
   description:
