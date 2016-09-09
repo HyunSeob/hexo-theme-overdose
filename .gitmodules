@@ -1,0 +1,9 @@
+[submodule "source/vendor/noto-sans-kr"]
+	path = source/vendor/noto-sans-kr
+	url = https://github.com/HyunSeob/noto-sans-kr
+[submodule "source/vendor/spoqa-han-sans"]
+	path = source/vendor/spoqa-han-sans
+	url = https://github.com/spoqa/spoqa-han-sans
+[submodule "source/vendor/font-awesome"]
+	path = source/vendor/font-awesome
+	url = https://github.com/FortAwesome/Font-Awesome.git
