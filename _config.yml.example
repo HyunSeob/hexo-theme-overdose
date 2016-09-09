@@ -17,18 +17,17 @@ default: /images/default.jpg
 font:
 
 profile:
+  image:
   gravatar:
-  image: /images/avatar.png
-  link: /about
-  location: 'Seoul, Korea'
-  description: 언제쯤 고수가 될까.
+  link:
+  description:
   social:
-    github: https://github.com/hyunseob
-    facebook: https://www.facebook.com/hyunseob.lee.7
-    linkedin: https://www.linkedin.com/in/hyunseoblee
-    instagram: https://www.instagram.com/hyunseob_lee/
-    twitter: https://twitter.com/HyunSeob_
-    rss: http://feedly.com/i/subscription/feed/http://hyunseob.github.io/atom.xml
+    github:
+    facebook:
+    linkedin:
+    instagram:
+    twitter:
+    rss:
 
 # Footer widgets
 # Don't use over than 3 widgets.
