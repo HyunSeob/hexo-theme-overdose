@@ -13,6 +13,7 @@
   overflow: hidden;
   @media #{$desktop} {
     padding: 0 0.5rem;
+    text-align: center;
   }
 }
 
@@ -25,6 +26,10 @@
   @media #{$desktop} {
     width: 33.33%;
     padding: 0 0.5rem;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    text-align: left;
   }
 
   // Widgets common styles
