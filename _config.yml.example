@@ -14,7 +14,7 @@ default: /images/default.jpg
 #   'spoqa-han-sans-jp'
 # ]
 # If you don't want font, you shouldn't specify the font.
-font: noto-sans-kr
+font:
 
 profile:
   gravatar:
@@ -39,6 +39,7 @@ profile:
 #   'tag-cloud',
 #   'tags'
 # ]
+# If you don't want widget, you shouldn't specify widgets.
 widgets:
   - recent-posts
   - archives

@@ -13,73 +13,104 @@
   }
 
   // Article common styles
-  img {
-    display: block;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  blockquote {
-    background-color: $semi-white;
-    padding: $base-margin;
-    margin-left: 0;
-    margin-right: 0;
-    p {
-      margin: 0;
-      + p {
-        margin-top: 1rem;
+  .article__contents {
+    img {
+      display: block;
+      margin-left: -1rem;
+      margin-right: -1rem;
+      width: calc(100% + 2rem);
+      @media #{$desktop} {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $bold-black;
+    }
+
+    blockquote {
+      background-color: $semi-white;
+      padding: $base-margin;
+      margin-left: 0;
+      margin-right: 0;
+      p {
+        margin: 0;
+        + p {
+          margin-top: 1rem;
+        }
+      }
+      code {
+        background-color: transparent;
+        padding: 0;
+        font-style: italic;
+      }
+    }
+
     code {
-      background-color: transparent;
-      padding: 0;
-      font-style: italic;
+      background-color: $semi-white;
+      color: $secondary-yellow;
+      padding: 0.125rem 0.25rem;
+      border-radius: 2px;
+      margin-left: 0;
+      margin-right: 0;
     }
-  }
 
-  code {
-    background-color: $lighted-sky;
-    color: $darked-gray;
-    padding: 0.125rem 0.25rem;
-    border-radius: 2px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  figure.highlight {
-    padding: 0 $base-margin;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  table {
-    border-top: 1px solid $gray;
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
-    thead tr th{
-      border-bottom: 2px solid $semi-white;
-      padding: 0.25rem 0;
+    figure.highlight {
+      padding: 0 $base-margin;
+      margin-left: 0;
+      margin-right: 0;
     }
-    tbody tr {
-      td {
-        border-bottom: 1px solid $semi-white;
+
+    table {
+      border-top: 1px solid $gray;
+      width: 100%;
+      text-align: left;
+      border-collapse: collapse;
+      thead tr th{
+        border-bottom: 2px solid $semi-white;
         padding: 0.25rem 0;
       }
-      &:last-child td {
-        border-color: $gray;
+      tbody tr {
+        td {
+          border-bottom: 1px solid $semi-white;
+          padding: 0.25rem 0;
+        }
+        &:last-child td {
+          border-color: $gray;
+        }
       }
     }
-  }
 
-  iframe {
-    display: block;
-    margin: 1rem 0;
-  }
+    iframe {
+      display: block;
+      margin: 1rem 0;
+    }
 
-  ul {
-    padding-left: 1.5rem;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      li:before {
+        content: '•';
+        margin: 0 0.5rem;
+      }
+    }
+
+    hr {
+      position: relative;
+      border: 0;
+      margin: 0;
+      height: 4rem;
+      &:after {
+        content: '• • •';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -0.75rem;
+        margin-left: -1.5rem;
+      }
+    }
   }
 }
 
@@ -88,7 +119,14 @@
 }
 
 .article__image {
-  margin: $base-margin 0;
+  display: block;
+  margin: $base-margin -1rem;
+  width: calc(100% + 2rem);
+  @media #{$desktop} {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .article__meta {

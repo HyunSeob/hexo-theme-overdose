@@ -20,7 +20,8 @@ article.article(itemscope itemtype="https://schema.org/BlogPosting")
   else
     hr
   
-  != page.content
+  .article__contents
+    != page.content
   
   if page.tags && page.tags.length
     .article__tags
