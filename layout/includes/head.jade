@@ -7,11 +7,12 @@
 - pageTitle = pageTitle ? pageTitle += ' | ' + config.title : config.title;
 -
   var openGraph = open_graph({
+    description: page.content || config.description || theme.profile.description,
     image: (page.photos ? page.photos[0] : null) || theme.default || page.thumbnail,
     fb_app_id: theme.facebook,
-    fb_admins: theme.fbAdmin,
+    fb_admins: theme.fb_admin,
     twitter_id: theme.twitter,
-    google_plus: theme.googlePlus
+    google_plus: theme.google_plus
   });
 
 meta(charset='UTF-8')
