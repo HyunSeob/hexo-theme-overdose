@@ -42,13 +42,19 @@ $ npm install --save hexo-renderer-jade hexo-renderer-bourbon
 
 And clone git submodules.
 ```
-$ cd themes/overdose; git submodule update
+$ cd themes/overdose;git submodule init;git submodule update
 ```
 
 Then, copy the configuration example file.
 ```
 $ cp _config.yml.example _config.yml
 ```
+
+And then, specify `overdose` theme in your root configuration file.
+``` yml
+theme: overdose
+```
+
 
 Finally, start the hexo server.
 ```

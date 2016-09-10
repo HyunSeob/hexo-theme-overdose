@@ -5,7 +5,7 @@ menu:
   Archives: /archives
 
 # Images
-favicon: /images/icon.png
+favicon: /images/logo.svg
 default: /images/default.jpg
 
 # availableFontList: [
