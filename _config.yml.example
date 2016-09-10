@@ -22,12 +22,12 @@ profile:
   link:
   description:
   social:
-    github:
-    facebook:
-    linkedin:
-    instagram:
-    twitter:
-    rss:
+    github: /
+    facebook: /
+    linkedin: /
+    instagram: /
+    twitter: /
+    rss: /atom.xml
 
 # Footer widgets
 # Don't use over than 3 widgets.
