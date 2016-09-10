@@ -36,7 +36,7 @@ section.post-list
     article.post-list__item
       .post-list__item__col-1
         a.post-list__item__link(href=url_for(post.path))
-          .post-list__item__link__background(style="background-image: url('#{ post.photos[0] || theme.default }')")
+          .post-list__item__link__background(style="background-image: url('#{ post.banner || theme.default }')")
       .post-list__item__col-2
         .post-list__item__meta
           if post.categories && post.categories.length
