@@ -1,5 +1,7 @@
 # hexo-theme-overdose
 
+![Mock-up image](/source/images/mock-up.png)
+
 ⚠ Caution: you could be overdosed this hexo theme.
 
 The Overdose is minimalistic, simple and beatiful hexo theme, specialized in Korean blogs.
