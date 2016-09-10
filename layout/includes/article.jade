@@ -13,9 +13,9 @@ article.article(itemscope itemtype="https://schema.org/BlogPosting")
           )= category.name
           unless index === page.categories.length - 1
             span.article__meta__categories__separator >
-  if page.photos && page.photos.length
+  if page.banner
     img.article__image(
-      src="#{page.banner || theme.default}"
+      src="#{page.banner}"
       alt="Post Image")
   else
     hr
