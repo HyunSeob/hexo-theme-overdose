@@ -1,8 +1,8 @@
 # hexo-theme-overdose
 
-![Mock-up image](/source/images/mock-up.png)
-
 ⚠ Caution: you could be overdosed this hexo theme.
+
+![Mock-up image](/source/images/mock-up.png)
 
 The Overdose is minimalistic, simple and beatiful hexo theme, specialized in Korean blogs.
 
@@ -37,7 +37,7 @@ $ cd your/hexo/directory
 $ git clone https://github.com/HyunSeob/hexo-theme-overdose.git themes/overdose
 ```
 
-The overdose theme is using jade/sass. So install renderers.
+The overdose theme is using jade/sass(with bourbon). So install renderers.
 ```
 $ npm install --save hexo-renderer-jade hexo-renderer-bourbon
 ```
@@ -53,14 +53,14 @@ $ cp _config.yml.example _config.yml
 ```
 
 And then, specify `overdose` theme in your root configuration file.
+
 ``` yml
 theme: overdose
 ```
 
-
-Finally, start the hexo server.
+Finally, start the hexo server and enjoy.
 ```
-$ cd ../..; hexo server
+$ hexo server
 ```
 
 ### Configuration
@@ -69,14 +69,13 @@ See the [_config.yml.example](https://github.com/HyunSeob/hexo-theme-overdose/bl
 
 ### Post Front matter
 
-You can set the post banner image by `photos[0]` property.
+You can set the post banner image by `banner` property.
 
 ``` yml
 ---
 title: Overdose is a hexo theme
 date: 2016-09-10 14:30:00
-photos:
-  - /images/default.jpg
+banner: /images/default.jpg
 categories:
   - Blog
   - Hexo
@@ -92,4 +91,4 @@ tags:
 - LiveRe
 - Facebook Comments
 - Featured posts
-- More code highlighting theme
+- More code highlighting themes
