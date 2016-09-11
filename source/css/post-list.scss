@@ -70,6 +70,12 @@
 
 .post-list__item__title {
   margin: 0.5rem 0;
+  @media #{$mobile} {
+    height: 1.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
   a {
     color: $black;
     &:hover {

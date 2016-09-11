@@ -15,8 +15,13 @@ article.article(itemscope itemtype="https://schema.org/BlogPosting")
             span.article__meta__categories__separator >
   if page.banner
     img.article__image(
-      src="#{page.banner}"
+      src=page.banner
       alt="Post Image")
+  else if page.photos && page.photos.length
+    each photo in page.photos
+      img.article__image(
+        src=photo
+        alt="Gallery Image")
   else
     hr
   
