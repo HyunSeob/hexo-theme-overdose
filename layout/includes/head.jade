@@ -34,9 +34,16 @@ link(rel="stylesheet" href="/vendor/normalize.min.css")
 link(rel="stylesheet" href="/vendor/font-awesome-4.6.3/css/font-awesome.min.css")
 link(rel="stylesheet" href="/css/index.css")
 
+if theme.dynamic_menu
+  link(rel="stylesheet" href="/css/dynamic_menu.css")
+
 | !{ canonical(config, page) }
 | !{ openGraph }
-link(rel="icon", href=theme.favicon || 'images/favicon.ico')
+
+if theme.favicon
+  link(rel="icon" href=theme.favicon)
+if theme.profile.social.rss
+  link(rel="alternative" href=theme.profile.social.rss type="application/atom+xml")
 
 if theme.google_site_verification
   meta(name="google-site-verification" content="#{theme.google_site_verification}")

@@ -50,11 +50,12 @@ article.article(itemscope itemtype="https://schema.org/BlogPosting")
     p.article__author__desc= theme.profile.description || config.description
     .article__author__socials
       each url, label in theme.profile.social
-        a.article__author__socials__item(
-          href=url
-          title="#{label}"
-          target="_blank")
-          i(class="fa fa-#{label}")
+        if url
+          a.article__author__socials__item(
+            href=url
+            title="#{label}"
+            target="_blank")
+            i(class="fa fa-#{label}")
     meta(itemprop="name" content="#{config.author}")
   
   // Disqus Code

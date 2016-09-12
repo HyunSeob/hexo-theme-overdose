@@ -84,6 +84,16 @@ tags:
 ---
 ```
 
+## Browser compatibility
+
+- [x] Chrome
+- [x] Edge
+- [x] IE 9+ (CSS3 Animation is not worked in IE9)
+- [x] Firefox
+- [x] Safari
+- [x] Android Browser
+- [x] iOS Safari
+
 ## To Do
 
 - Sharing(Facebook, Twitter, Pinterest, Pocket)

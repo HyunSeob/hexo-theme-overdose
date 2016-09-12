@@ -21,4 +21,5 @@ html(lang=config.language)
         ga('create', '#{theme.google_analytics}', 'auto');
         ga('send', 'pageview');
 
-    script(src="/js/dynamic-menu.js")
+    if theme.dynamic_menu
+      script(src="/js/dynamic-menu.js")
