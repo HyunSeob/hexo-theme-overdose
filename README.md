@@ -1,6 +1,6 @@
 # hexo-theme-overdose
 
-⚠ Caution: you could be overdosed this hexo theme.
+⚠ Caution: you could be overdosed with this hexo theme.
 
 ![Mock-up image](/source/images/mock-up.png)
 
@@ -26,7 +26,7 @@ This theme works with hexo v3.2 or later.
   - Naver Site Verification
   - Disqus
 - Related posts
-- Dynamic hide/show menu
+- Dynamic hide/show menu (Unstable)
 
 ## Quick Start
 
@@ -75,7 +75,10 @@ You can set the post banner image by `banner` property.
 ---
 title: Overdose is a hexo theme
 date: 2016-09-10 14:30:00
-banner: /images/default.jpg
+banner:
+  url: /images/default.jpg
+  width: 1280
+  height: 720
 categories:
   - Blog
   - Hexo
