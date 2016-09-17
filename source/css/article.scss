@@ -133,23 +133,32 @@
 
     ul, ol {
       list-style: none;
-      padding-left: 0;
+      li {
+        position: relative;
+        &:before {
+          position: absolute;
+        }
+      }
     }
 
-    ul li:before {
-      content: '•';
-      margin: 0 0.5rem;
+    ul {
+      padding-left: 1.5rem;
+      li:before {
+        content: '•';
+        left: -1.5rem;
+      }
     }
 
     ol {
+      padding-left: 2rem;
       counter-reset: ol-count;
       li:before {
+        left: -2rem;
         display: inline-block;
-        content: counter(ol-count);
+        content: counter(ol-count) '.';
         counter-increment: ol-count;
-        width: 1.3rem;
+        width: 1.5rem;
         text-align: right;
-        margin-right: 0.5rem;
       }
     }
 
