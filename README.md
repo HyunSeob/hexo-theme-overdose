@@ -1,4 +1,6 @@
 # hexo-theme-overdose
+[![GitHub release](https://img.shields.io/github/release/hyunseob/hexo-theme-overdose.svg?maxAge=2592000?style=plastic)](https://github.com/HyunSeob/hexo-theme-overdose)
+[![license](https://img.shields.io/github/license/hyunseob/hexo-theme-overdose.svg?maxAge=2592000?style=plastic)](https://github.com/HyunSeob/hexo-theme-overdose)
 
 [Demo](http://hyunseob.github.io)
 
