@@ -46,9 +46,9 @@ The overdose theme is using jade/sass(with bourbon). So install renderers.
 $ npm install --save hexo-renderer-jade hexo-renderer-bourbon
 ```
 
-And clone git submodules.
+And clone vendor repositories.
 ```
-$ cd themes/overdose;git submodule init;git submodule update
+$ cd themes/overdose;npm run clone
 ```
 
 Then, copy the configuration example file.
