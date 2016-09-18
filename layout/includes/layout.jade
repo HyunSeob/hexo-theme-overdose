@@ -22,4 +22,7 @@ html(lang=config.language)
         ga('send', 'pageview');
 
     if theme.dynamic_menu
+      != "<!--[if lt IE 10]>"
+      script(src="/js/classList.min.js")
+      != "<![endif]-->"
       script(src="/js/dynamic-menu.js")

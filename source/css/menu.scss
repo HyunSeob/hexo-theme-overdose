@@ -11,10 +11,14 @@ $icon-margin: ($menu-height - $icon-size) / 2;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 3;
   @include transition(transform 0.3s ease);
+}
+
+.menu--hide {
+  @include transform(translateY(-$menu-height));
 }
 
 .menu-inner {
