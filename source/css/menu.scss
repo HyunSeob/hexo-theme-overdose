@@ -20,7 +20,7 @@ $icon-margin: ($menu-height - $icon-size) / 2;
 .menu--hide {
   @include transform(translateY(-2 * $menu-height));
   @media #{$desktop} {
-    @include transform(translateY($menu-height));
+    @include transform(translateY(-$menu-height));
   }
 }
 
