@@ -1,0 +1,60 @@
+@import "bourbon";
+@import "variables";
+
+$sharer-height: 3rem;
+
+$color-facebook: #3B5998;
+$color-twitter: #00ACED;
+$color-pinterest: #B5071A;
+$color-pocket: #EF4056;
+
+.sharer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: $sharer-height;
+  background-color: #fff;
+  z-index: 2;
+  border-top: 1px solid $lighted-gray;
+  @include transition(transform 0.3s ease);
+}
+
+.sharer--hide {
+  @include transform(translateY($sharer-height));
+}
+
+.sharer-inner {
+  padding: 0 1rem;
+  max-width: $content-width;
+  margin: auto;
+}
+
+.sharer__right {
+  float: right;
+}
+
+.sharer__item {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+  line-height: $sharer-height;
+  color: $gray;
+  cursor: pointer;
+  @include transition(color 0.3s ease);
+}
+
+#sharer-facebook:hover {
+  color: $color-facebook;
+}
+#sharer-twitter:hover {
+  color: $color-twitter;
+}
+#sharer-pinterest:hover {
+  color: $color-pinterest;
+}
+#sharer-pocket:hover {
+  color: $color-pocket;
+}

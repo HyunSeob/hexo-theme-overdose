@@ -58,6 +58,8 @@ article#article.article(itemscope itemtype="https://schema.org/BlogPosting")
             i(class="fa fa-#{label}")
     meta(itemprop="name" content="#{config.author}")
   
+  include sharer
+    
   // Disqus Code
   if config.disqus_shortname
     #disqus_thread
