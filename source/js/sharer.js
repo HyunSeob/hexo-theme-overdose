@@ -1,7 +1,4 @@
 (function(window, document) {
-  function bindClick(target, callback) {
-    target.addEventListener('click', callback);
-  }
 
   var shareUrls = {
     facebook:  '//www.facebook.com/sharer.php?u=',
@@ -19,9 +16,16 @@
   ].join(''));
 
   sharers.forEach(function(sharer) {
-    document.getElementById('sharer-' + sharer)
-    .addEventListener('click', function() {
-      window.open(shareUrls[sharer] + url);
+    var elem = document.getElementById('sharer-' + sharer);
+    if (!elem) return;
+
+    elem.addEventListener('click', function() {
+      window.open(
+        shareUrls[sharer] + url,
+        'Share to ' + sharer,
+        'toolbar=0,location=0,menubar=0,height=400,width=600'
+      );
     });
   });
+
 })(window, document);
