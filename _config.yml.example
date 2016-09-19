@@ -22,8 +22,7 @@ default:
 ## If you don't want font, you shouldn't specify the font.
 font:
 
-# Dynamic menu with scrolling, default disabled
-## Caution: Dynamic menu is currently having a buggy behavior in IE & Firefox. So I do not recommend enabling this feature.
+# Dynamic menu with scrolling
 dynamic_menu: false
 
 # Profile

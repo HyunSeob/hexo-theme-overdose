@@ -31,6 +31,7 @@ This theme works with hexo v3.2 or later.
   - Disqus
 - Related posts
 - Dynamic hide/show menu (Unstable)
+- Sharing(Facebook, Twitter, Pinterest, Pocket)
 
 ## Quick Start
 
@@ -103,7 +104,6 @@ tags:
 
 ## To Do
 
-- Sharing(Facebook, Twitter, Pinterest, Pocket)
 - i18n
 - LiveRe
 - Facebook Comments
