@@ -11,14 +11,17 @@ $icon-margin: ($menu-height - $icon-size) / 2;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 3;
+  box-sizing: border-box;
   @include transition(transform 0.3s ease);
+  @media #{$desktop} {
+    position: fixed;
+  }
 }
 
 .menu--hide {
-  @include transform(translateY(-2 * $menu-height));
   @media #{$desktop} {
     @include transform(translateY(-$menu-height));
   }

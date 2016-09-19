@@ -1,13 +1,13 @@
 (function(window, document) {
-  function hide(target, targetName) {
-    if (!target.classList.contains(targetName + '--hide')) {
-      target.classList.add(targetName + '--hide');
+  function addClass(target, className) {
+    if (!target.classList.contains(className)) {
+      target.classList.add(className);
     }
   }
 
-  function show(target, targetName) {
-    if (target.classList.contains(targetName + '--hide')) {
-      target.classList.remove(targetName + '--hide');
+  function removeClass(target, className) {
+    if (target.classList.contains(className)) {
+      target.classList.remove(className);
     }
   }
 
@@ -15,6 +15,7 @@
     var prevPos = 0, currPos = 0;
     var menu = document.getElementById('menu');
     var article = document.getElementById('article');
+    var articleTop = article ? article.offsetTop : null;
     var articleBottom = article ? article.offsetTop + article.scrollHeight : null;
     var throttled = false;
 
@@ -23,16 +24,18 @@
       if (throttled) return;
       throttled = true;
 
-      currPos = window.scrollY || window.pageYOffset || document.body.scrolTop;
+      currPos = window.scrollY || window.pageYOffset || document.body.scrolTop || 0;
 
       if (currPos < 0) currPos = 0;
 
-      if (articleBottom && currPos > articleBottom) {
-        show(menu, 'menu');
+      if (articleTop && articleTop > currPos) {
+        removeClass(menu, 'menu--hide');
+      } else if (articleBottom && currPos > articleBottom) {
+        removeClass(menu, 'menu--hide');
       } else if (prevPos < currPos) {
-        hide(menu, 'menu');
+        addClass(menu, 'menu--hide');
       } else if (prevPos > currPos) {
-        show(menu, 'menu');
+        removeClass(menu, 'menu--hide');
       }
 
       prevPos = currPos;
@@ -40,7 +43,7 @@
       setTimeout(function() {
         throttled = false;
       }, 100);
-      
+
     });
   };
 })(window, document);
