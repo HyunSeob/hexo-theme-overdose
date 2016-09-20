@@ -41,7 +41,7 @@ link(rel="stylesheet" href="/css/index.css")
 if theme.favicon
   link(rel="icon" href=theme.favicon)
 if theme.profile.social.rss
-  link(rel="alternative" href=theme.profile.social.rss type="application/atom+xml")
+  link(rel="alternative" href=theme.profile.social.rss type="application/atom+xml" title=config.title)
 
 if theme.google_site_verification
   meta(name="google-site-verification" content="#{theme.google_site_verification}")
