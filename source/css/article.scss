@@ -16,8 +16,7 @@
   .article__contents {
     img {
       display: block;
-      margin-left: -1rem;
-      margin-right: -1rem;
+      margin: 2rem -1rem;
       @media #{$mobile} {
         width: calc(100% + 2rem);
       }
