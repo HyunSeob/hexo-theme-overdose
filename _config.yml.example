@@ -27,6 +27,8 @@ dynamic_menu: false
 
 # Related posts
 ## If you don't want `related posts` feature, you should specify the value as 0.
+## If you want more related posts, you can do it too.
+## But I don't recommend to specify over than 3.
 related_posts: 3 # default enabled as 3
 
 # Profile
