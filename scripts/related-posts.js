@@ -7,14 +7,16 @@ function parseId(postData, type) {
 
 function getSimilarityScore(arrA, arrB) {
   if (!arrA.length || !arrB.length) return 0;
-  return _.intersection(arrA, arrB).length / (arrA.length + arrB.length);
+  return Math.sqrt(
+    _.intersection(arrA, arrB).length / Math.max(arrA.length, arrB.length)
+  );
 }
 
 function getPostSimilarity(postA, postB) {
   return getSimilarityScore(
     parseId(postA, 'tags'),
     parseId(postB, 'tags')
-  ) + getSimilarityScore(
+  ) * 2 + getSimilarityScore(
     parseId(postA, 'categories'),
     parseId(postB, 'categories')
   );
