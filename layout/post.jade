@@ -3,7 +3,7 @@ extends includes/layout
 block content
   include includes/article
       
-  - var relatedPosts = related_posts(page, 3);
+  - var relatedPosts = related_posts(page, theme.related_posts);
   
   if relatedPosts.length
     section.related-posts

@@ -25,6 +25,10 @@ font:
 # Dynamic menu with scrolling
 dynamic_menu: false
 
+# Related posts
+## If you don't want `related posts` feature, you should specify the value as 0.
+related_posts: 3 # default enabled as 3
+
 # Profile
 profile:
   image: /images/avatar.jpg
