@@ -15,6 +15,12 @@
         .toArray();
     }
   }
+-
+  var decodeHtmlEntity = function(str) {
+    return str.replace(/&#x(\w+);/g, function(match, hex) {
+      return String.fromCharCode(parseInt(hex, 16));
+    });
+  };
 
 section.post-list
   if !is_home()
@@ -60,4 +66,4 @@ section.post-list
               href=url_for(post.path)
               title=post.title || 'Untitled'
             )= post.title || 'Untitled'
-        p.post-list__item__description= truncate(strip_html(post.excerpt || post.content), truncOptions)
+        p.post-list__item__description= truncate(strip_html(decodeHtmlEntity(post.excerpt || post.content)), truncOptions)
