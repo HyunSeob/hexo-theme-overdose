@@ -17,6 +17,7 @@
   });
 
 meta(charset='UTF-8')
+meta(http-equiv="X-UA-Compatible" content="IE=edge")
 meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
 
 title= pageTitle
@@ -37,6 +38,8 @@ link(rel="stylesheet" href="/css/index.css")
 
 | !{ canonical(config, page) }
 | !{ openGraph }
+if is_post()
+  meta(property="article:author" content=theme.profile.social.facebook || config.author)
 
 if theme.favicon
   link(rel="icon" href=theme.favicon)

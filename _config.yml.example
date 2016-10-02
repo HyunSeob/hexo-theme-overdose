@@ -39,7 +39,7 @@ profile:
   description:
   social:
     github:
-    facebook:
+    facebook: # Facebook property also used in `article:author` meta tag.
     linkedin:
     instagram:
     twitter:
