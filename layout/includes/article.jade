@@ -13,16 +13,7 @@ article#article.article(itemscope itemtype="https://schema.org/BlogPosting")
           )= category.name
           unless index === page.categories.length - 1
             span.article__meta__categories__separator >
-  if page.banner && page.banner.url
-    img.article__image(
-      src=page.banner.url
-      alt="Post Image")
-  else if page.photos && page.photos.length
-    each photo in page.photos
-      img.article__image(
-        src=photo
-        alt="Gallery Image")
-  else
+  unless (page.banner && page.banner.url) || (page.photos && page.photos.length)
     hr
   
   .article__contents

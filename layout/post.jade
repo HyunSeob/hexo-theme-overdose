@@ -11,7 +11,7 @@ block content
       each post in relatedPosts
         .related-posts__item__wrapper
           a.related-posts__item(href=url_for(post.path))
-            - var banner = post.banner ? post.banner.url : ((post.photos && post.photos.length) ? post.photos[0] : theme.default.url);
+            - var banner = bannerOf(post) || theme.default.url;
             .related-posts__item__background(style="background-image: url('#{ banner }')")
             .related-posts__item__overlay
             span.related-posts__item__title= post.title || 'Untitled'

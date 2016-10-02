@@ -42,7 +42,7 @@ section.post-list
     article.post-list__item
       .post-list__item__col-1
         a.post-list__item__link(href=url_for(post.path))
-          - var banner = post.banner ? post.banner.url : (post.photos[0] || theme.default.url)
+          - var banner = bannerOf(post) || theme.default.url;
           .post-list__item__link__background(style="background-image: url('#{ banner }')")
       .post-list__item__col-2
         .post-list__item__meta
