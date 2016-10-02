@@ -13,16 +13,24 @@
   }
   .keyword,
   .selector-tag,
-  .literal,
   .section,
   .link {
-    color: #8be9fd;
-  }
-  .function .keyword {
     color: #ff79c6;
   }
+  .literal,
+  .number {
+    color: #bd93f9;
+  }
+  .function .keyword {
+    color: #8be9fd;
+  }
+  .title {
+    color: #50fa7b;
+  }
+  .params {
+    color: #ffb86c;
+  }
   .string,
-  .title,
   .name,
   .type,
   .attribute,
@@ -51,7 +59,10 @@
   .strong {
     font-weight: bold;
   }
-  .emphasis {
+  .emphasis, .built_in {
     font-style: italic;
+  }
+  .built_in {
+    color: #8be9fd;
   }
 }
