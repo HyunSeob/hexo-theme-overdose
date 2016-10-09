@@ -163,6 +163,13 @@
       }
     }
 
+    // Footnote escape
+    // For hexo-renderer-markdown-it / footnote plugin
+    // https://github.com/celsomiranda/hexo-renderer-markdown-it
+    #footnotelist ol li:before {
+      content: '';
+    }
+
     hr {
       position: relative;
       border: 0;
