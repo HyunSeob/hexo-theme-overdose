@@ -33,7 +33,6 @@
   .string,
   .name,
   .type,
-  .attribute,
   .symbol,
   .bullet,
   .addition,
@@ -41,6 +40,9 @@
   .template-tag,
   .template-variable {
     color: #f1fa8c;
+  }
+  .string .subst {
+    color: #ff79c6;
   }
   .comment,
   .quote,
@@ -63,6 +65,26 @@
     font-style: italic;
   }
   .built_in {
+    color: #8be9fd;
+  }
+
+  // HTML highlighting
+  .tag {
+    .name {
+      color: #ff79c6;
+    }
+    .attr {
+      color: #50fa7b;
+    }
+  }
+
+  // CSS highlighting
+  .selector-id,
+  .selector-class {
+    color: #50fa7b;
+  }
+
+  .attribute {
     color: #8be9fd;
   }
 }

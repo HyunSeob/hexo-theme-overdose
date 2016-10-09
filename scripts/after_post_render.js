@@ -6,7 +6,7 @@ function imgTpl(url) {
   return '<img src="' + url + '"/>';
 }
 
-hexo.extend.filter.register('before_post_render', function (data) {
+hexo.extend.filter.register('after_post_render', function (data) {
   if (data.banner) {
     var img = imgTpl(data.banner.url);
     data.content = img + data.content;
