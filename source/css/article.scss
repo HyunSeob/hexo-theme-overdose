@@ -76,14 +76,27 @@
       margin-left: 0;
       margin-right: 0;
       figcaption {
-        height: 3rem;
-        line-height: 3rem;
+        margin-top: 1rem;
         span {
+          color: $gray;
           margin-right: 0.5rem;
+        }
+        a {
+          float: right;
+        }
+      }
+      table {
+        border: 0;
+        tr td {
+          padding: 0;
         }
       }
       .line.marked {
         background-color: rgba(0, 0, 0, 0.3);
+      }
+      .gutter {
+        padding-right: 1rem;
+        color: $gray;
       }
     }
 
