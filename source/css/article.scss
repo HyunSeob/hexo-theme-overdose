@@ -177,10 +177,18 @@
     }
 
     // Footnote escape
-    // For hexo-renderer-markdown-it / footnote plugin
-    // https://github.com/celsomiranda/hexo-renderer-markdown-it
-    #footnotelist ol li:before {
-      content: '';
+    // For hexo-footnotes
+    // https://github.com/LouisBarranqueiro/hexo-footnotes
+    #footnotelist ol {
+      padding-left: 2rem !important;
+      li {
+        span:first-child {
+          display: none !important;
+        }
+        span:nth-child(2) {
+          display: inline !important;
+        }
+      }
     }
 
     hr {
