@@ -1,4 +1,5 @@
 _config.yml
 node_modules
+npm-debug.log
 source/vendor/noto-sans-kr
 source/vendor/spoqa-han-sans
