@@ -64,6 +64,7 @@
     }
 
     code {
+      font-family: consolas, monospace;
       background-color: $semi-white;
       color: $secondary-yellow;
       padding: 0.125rem 0.25rem;
@@ -76,6 +77,9 @@
       padding: 0 $base-margin;
       margin-left: 0;
       margin-right: 0;
+      * {
+        font-family: consolas, monospace;
+      }
       figcaption {
         margin-top: 1rem;
         span {
