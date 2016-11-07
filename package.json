@@ -4,7 +4,7 @@
   "description": "The theme which you must be overdosed.",
   "private": true,
   "scripts": {
-    "clone": "git clone https://github.com/spoqa/spoqa-han-sans ./source/vendor/spoqa-han-sans;git clone https://github.com/hyunseob/noto-sans-kr ./source/vendor/noto-sans-kr",
+    "clone": "git clone https://github.com/spoqa/spoqa-han-sans ./source/libs/spoqa-han-sans;git clone https://github.com/hyunseob/noto-sans-kr ./source/libs/noto-sans-kr",
     "build": "node_modules/.bin/uglifyjs ./source/js/dynamicMenu.js -m -o ./source/js/dynamicMenu.min.js;node_modules/.bin/uglifyjs ./source/js/sharer.js -m -o ./source/js/sharer.min.js;cat ./source/js/dynamicMenu.min.js ./source/js/sharer.min.js > ./source/js/index.min.js"
   },
   "dependencies": {},

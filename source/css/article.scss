@@ -29,6 +29,7 @@
 
     h1, h2, h3, h4, h5, h6 {
       color: $bold-black;
+      margin-top: 3rem;
     }
 
     blockquote {
@@ -63,6 +64,7 @@
     }
 
     code {
+      font-family: consolas, monospace;
       background-color: $semi-white;
       color: $secondary-yellow;
       padding: 0.125rem 0.25rem;
@@ -75,15 +77,31 @@
       padding: 0 $base-margin;
       margin-left: 0;
       margin-right: 0;
+      * {
+        font-family: consolas, monospace;
+      }
       figcaption {
-        height: 3rem;
-        line-height: 3rem;
+        margin-top: 1rem;
         span {
+          color: $gray;
           margin-right: 0.5rem;
+        }
+        a {
+          float: right;
+        }
+      }
+      table {
+        border: 0;
+        tr td {
+          padding: 0;
         }
       }
       .line.marked {
         background-color: rgba(0, 0, 0, 0.3);
+      }
+      .gutter {
+        padding-right: 1rem;
+        color: $gray;
       }
     }
 
@@ -164,10 +182,18 @@
     }
 
     // Footnote escape
-    // For hexo-renderer-markdown-it / footnote plugin
-    // https://github.com/celsomiranda/hexo-renderer-markdown-it
-    #footnotelist ol li:before {
-      content: '';
+    // For hexo-footnotes
+    // https://github.com/LouisBarranqueiro/hexo-footnotes
+    #footnotelist ol {
+      padding-left: 2rem !important;
+      li {
+        span:first-child {
+          display: none !important;
+        }
+        span:nth-child(2) {
+          display: inline !important;
+        }
+      }
     }
 
     hr {
