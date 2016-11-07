@@ -23,17 +23,17 @@ meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale
 title= pageTitle
 
 if theme.font === 'spoqa-han-sans-kr'
-  link(rel="stylesheet" href="/vendor/spoqa-han-sans/css/SpoqaHanSans-kr.css")
+  link(rel="stylesheet" href="/libs/spoqa-han-sans/css/SpoqaHanSans-kr.css")
 else if theme.font === 'spoqa-han-sans-jp'
-  link(rel="stylesheet" href="/vendor/spoqa-han-sans/css/SpoqaHanSans-jp.css")
+  link(rel="stylesheet" href="/libs/spoqa-han-sans/css/SpoqaHanSans-jp.css")
 else if theme.font === 'noto-sans-kr'
-  link(rel="stylesheet" href="/vendor/noto-sans-kr/styles.css")
+  link(rel="stylesheet" href="/libs/noto-sans-kr/styles.css")
   
 if theme.font
   link(rel="stylesheet" href="/css/font.css")
   
-link(rel="stylesheet" href="/vendor/normalize.min.css")
-link(rel="stylesheet" href="/vendor/font-awesome-4.6.3/css/font-awesome.min.css")
+link(rel="stylesheet" href="/libs/normalize.min.css")
+link(rel="stylesheet" href="/libs/font-awesome-4.6.3/css/font-awesome.min.css")
 link(rel="stylesheet" href="/css/index.css")
 
 | !{ canonical(config, page) }
