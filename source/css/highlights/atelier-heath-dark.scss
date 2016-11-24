@@ -1,0 +1,42 @@
+/* Base16 Atelier Heath Dark - Theme */
+/* by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/heath) */
+/* Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16) */
+
+.highlight {
+  color: #ab9bab;
+  background: #1b181b;
+
+  .code {
+    .comment, .quote {
+      color: #9e8f9e;
+    }
+
+    .variable, .template-variable, .attribute, .tag, .name, .regexp, .link, .selector-id, .selector-class {
+      color: #ca402b;
+    }
+
+    .number, .meta, .built_in, .builtin-name, .literal, .type, .params {
+      color: #a65926;
+    }
+
+    .string, .symbol, .bullet {
+      color: #918b3b;
+    }
+
+    .title, .section {
+      color: #516aec;
+    }
+
+    .keyword, .selector-tag {
+      color: #7b59c0;
+    }
+
+    .emphasis {
+      font-style: italic;
+    }
+
+    .strong {
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
+
+.highlight {
+  color: #839496;
+  background: #002b36;
+
+  .code {
+    .comment, .quote {
+      color: #586e75;
+    }
+
+    .keyword, .selector-tag, .addition {
+      color: #859900;
+    }
+
+    .number, .string, .meta .meta-string, .literal, .doctag, .regexp {
+      color: #2aa198;
+    }
+
+    .title, .section, .name, .selector-id, .selector-class {
+      color: #268bd2;
+    }
+
+    .attribute, .attr, .variable, .template-variable, .class .title, .type {
+      color: #b58900;
+    }
+
+    .symbol, .bullet, .subst {
+      color: #cb4b16;
+    }
+
+    .meta {
+      color: #cb4b16;
+
+      .keyword {
+        color: #cb4b16;
+      }
+    }
+
+    .selector-attr, .selector-pseudo, .link {
+      color: #cb4b16;
+    }
+
+    .built_in, .deletion {
+      color: #dc322f;
+    }
+
+    .formula {
+      background: #073642;
+    }
+
+    .emphasis {
+      font-style: italic;
+    }
+
+    .strong {
+      font-weight: bold;
+    }
+  }
+}

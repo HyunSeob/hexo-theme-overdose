@@ -1,0 +1,42 @@
+/* Base16 Atelier Dune Dark - Theme */
+/* by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/dune) */
+/* Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16) */
+
+.highlight {
+  color: #a6a28c;
+  background: #20201d;
+
+  .code {
+    .comment, .quote {
+      color: #999580;
+    }
+
+    .variable, .template-variable, .attribute, .tag, .name, .regexp, .link, .selector-id, .selector-class {
+      color: #d73737;
+    }
+
+    .number, .meta, .built_in, .builtin-name, .literal, .type, .params {
+      color: #b65611;
+    }
+
+    .string, .symbol, .bullet {
+      color: #60ac39;
+    }
+
+    .title, .section {
+      color: #6684e1;
+    }
+
+    .keyword, .selector-tag {
+      color: #b854d4;
+    }
+
+    .emphasis {
+      font-style: italic;
+    }
+
+    .strong {
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+/* Base16 Atelier Lakeside Light - Theme */
+/* by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/lakeside) */
+/* Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16) */
+
+.highlight {
+  color: #516d7b;
+  background: #ebf8ff;
+
+  .code {
+    .comment, .quote {
+      color: #5a7b8c;
+    }
+
+    .variable, .template-variable, .attribute, .tag, .name, .regexp, .link, .selector-id, .selector-class {
+      color: #d22d72;
+    }
+
+    .number, .meta, .built_in, .builtin-name, .literal, .type, .params {
+      color: #935c25;
+    }
+
+    .string, .symbol, .bullet {
+      color: #568c3b;
+    }
+
+    .title, .section {
+      color: #257fad;
+    }
+
+    .keyword, .selector-tag {
+      color: #6b6bb8;
+    }
+
+    .emphasis {
+      font-style: italic;
+    }
+
+    .strong {
+      font-weight: bold;
+    }
+  }
+}
