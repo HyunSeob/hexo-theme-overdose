@@ -1,0 +1,56 @@
+/* Base16 Atelier Plateau Light - Theme */
+/* by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/plateau) */
+/* Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16) */
+
+.highlight {
+  color: #585050;
+  background: #f4ecec;
+
+  .code {
+    .comment, .quote {
+      color: #655d5d;
+    }
+
+    .variable, .template-variable, .attribute, .tag, .name, .regexp, .link, .selector-id, .selector-class {
+      color: #ca4949;
+    }
+
+    .number, .meta, .built_in, .builtin-name, .literal, .type, .params {
+      color: #b45a3c;
+    }
+
+    .string, .symbol, .bullet {
+      color: #4b8b8b;
+    }
+
+    .title, .section {
+      color: #7272ca;
+    }
+
+    .keyword, .selector-tag {
+      color: #8464c4;
+    }
+
+    .deletion, .addition {
+      color: #1b1818;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .deletion {
+      background-color: #ca4949;
+    }
+
+    .addition {
+      background-color: #4b8b8b;
+    }
+
+    .emphasis {
+      font-style: italic;
+    }
+
+    .strong {
+      font-weight: bold;
+    }
+  }
+}

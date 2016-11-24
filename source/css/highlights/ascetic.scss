@@ -1,0 +1,28 @@
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+
+*/
+
+.highlight {
+  color: #000;
+  background: #fff;
+
+  .code {
+    .string, .variable, .template-variable, .symbol, .bullet, .section, .addition, .attribute, .link {
+      color: #888;
+    }
+
+    .comment, .quote, .meta, .deletion {
+      color: #ccc;
+    }
+
+    .keyword, .selector-tag, .section, .name, .type, .strong {
+      font-weight: bold;
+    }
+
+    .emphasis {
+      font-style: italic;
+    }
+  }
+}

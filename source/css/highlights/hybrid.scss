@@ -1,0 +1,67 @@
+/*
+
+vim-hybrid theme by w0ng (https://github.com/w0ng/vim-hybrid)
+
+*/
+/*background color*/
+
+.highlight {
+  color: #c5c8c6;
+  background: #1d1f21;
+
+  /*selection color*/
+
+  &::selection, span::selection, &::-moz-selection, span::-moz-selection {
+    background: #373b41;
+  }
+
+  .code {
+    .title, .name {
+      color: #f0c674;
+    }
+
+    .comment {
+      color: #707880;
+    }
+
+    .meta {
+      color: #707880;
+
+      .keyword {
+        color: #707880;
+      }
+    }
+
+    .number, .symbol, .literal, .deletion, .link {
+      color: #c66;
+    }
+
+    .string, .doctag, .addition, .regexp, .selector-attr, .selector-pseudo {
+      color: #b5bd68;
+    }
+
+    .attribute, .code, .selector-id {
+      color: #b294bb;
+    }
+
+    .keyword, .selector-tag, .bullet, .tag {
+      color: #81a2be;
+    }
+
+    .subst, .variable, .template-tag, .template-variable {
+      color: #8abeb7;
+    }
+
+    .type, .built_in, .builtin-name, .quote, .section, .selector-class {
+      color: #de935f;
+    }
+
+    .emphasis {
+      font-style: italic;
+    }
+
+    .strong {
+      font-weight: bold;
+    }
+  }
+}
