@@ -72,6 +72,14 @@ $ hexo server
 
 See the [_config.yml.example](https://github.com/HyunSeob/hexo-theme-overdose/blob/master/_config.yml.example) file.
 
+## Disqus
+
+``` yml
+# _config.yml of base, not theme config
+# Please put your shortname of disqus here.
+disqus_shortname:
+```
+
 ### Post Front matter
 
 You can set the post banner image by `banner` property.
@@ -108,10 +116,3 @@ tags:
 - LiveRe
 - Facebook Comments
 - Featured posts
-
-## Disqus 
-
-```yml
-# _config.yml of base, not theme config
-disqus_shortname: Please put your shortname of disqus here.
-```
