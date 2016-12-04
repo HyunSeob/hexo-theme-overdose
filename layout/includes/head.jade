@@ -15,8 +15,7 @@
     twitter_id: theme.twitter,
     google_plus: theme.google_plus
   });
-
-  var highlight = (theme.highlight) || 'dracular';
+- var highlight = (theme.highlight && (typeof theme.highlight === 'string')) ? theme.highlight : 'dracular';
 
 meta(charset='UTF-8')
 meta(http-equiv="X-UA-Compatible" content="IE=edge")
