@@ -1,3 +1,6 @@
 body {
   font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Noto Sans Korean', sans-serif;
+  text-shadow: 0 0 0.1px rgba(0,0,0,0.3);
+  -webkit-text-size-adjust: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
