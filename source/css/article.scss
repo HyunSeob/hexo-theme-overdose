@@ -96,8 +96,11 @@
           padding: 0;
         }
       }
-      .line.marked {
-        background-color: rgba(0, 0, 0, 0.3);
+      .line {
+        min-height: 1.5rem;
+        &.marked {
+          background-color: rgba(0, 0, 0, 0.3);
+        }
       }
       .gutter {
         width: 1rem;
