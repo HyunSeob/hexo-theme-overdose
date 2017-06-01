@@ -16,7 +16,7 @@ This theme works with hexo v3.2 or later.
 
 - Responsive design
 - Lightweight, not using jQuery or underscore.js, etc.
-- Code highlighting by [dracular](https://draculatheme.com/) theme
+- Code highlighting by [dracula](https://draculatheme.com/) theme
 - Font setting
   - noto-sans-kr
   - spoqa-han-sans-kr
