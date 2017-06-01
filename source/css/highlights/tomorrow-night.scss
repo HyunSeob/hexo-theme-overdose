@@ -1,0 +1,45 @@
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+
+.highlight {
+  color: #c5c8c6;
+  background: #1d1f21;
+
+  .code {
+    .comment, .quote {
+      color: #969896;
+    }
+
+    .variable, .template-variable, .tag, .name, .selector-id, .selector-class, .regexp, .deletion {
+      color: #c66;
+    }
+
+    .number, .built_in, .builtin-name, .literal, .type, .params, .meta, .link {
+      color: #de935f;
+    }
+
+    .attribute {
+      color: #f0c674;
+    }
+
+    .string, .symbol, .bullet, .addition {
+      color: #b5bd68;
+    }
+
+    .title, .section {
+      color: #81a2be;
+    }
+
+    .keyword, .selector-tag {
+      color: #b294bb;
+    }
+
+    .emphasis {
+      font-style: italic;
+    }
+
+    .strong {
+      font-weight: bold;
+    }
+  }
+}

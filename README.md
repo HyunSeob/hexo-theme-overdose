@@ -16,7 +16,7 @@ This theme works with hexo v3.2 or later.
 
 - Responsive design
 - Lightweight, not using jQuery or underscore.js, etc.
-- Code highlighting by [dracula](https://draculatheme.com/) theme
+- Various code highlighting theme (Thanks to @SungYeolWoo), Set [Dracula](https://draculatheme.com/) theme by default
 - Font setting
   - noto-sans-kr
   - spoqa-han-sans-kr
@@ -28,7 +28,7 @@ This theme works with hexo v3.2 or later.
   - Google Analytics
   - Google Site Verification
   - Naver Site Verification
-  - Disqus
+  - [Disqus](#disqus)
 - Related posts
 - Dynamic hide/show menu (Unstable)
 - Sharing(Facebook, Twitter, Pinterest, Pocket)
@@ -72,6 +72,14 @@ $ hexo server
 
 See the [_config.yml.example](https://github.com/HyunSeob/hexo-theme-overdose/blob/master/_config.yml.example) file.
 
+## Disqus
+
+``` yml
+# _config.yml of base, not theme config
+# Please put your shortname of disqus here.
+disqus_shortname:
+```
+
 ### Post Front matter
 
 You can set the post banner image by `banner` property.
@@ -108,4 +116,3 @@ tags:
 - LiveRe
 - Facebook Comments
 - Featured posts
-- More code highlighting themes

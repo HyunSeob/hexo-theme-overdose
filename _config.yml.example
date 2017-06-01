@@ -25,6 +25,10 @@ font:
 # Dynamic menu with scrolling
 dynamic_menu: false
 
+# Highlight theme
+## You can also use various themes in `css/highlights`
+highlight: dracula
+
 # Related posts
 ## If you don't want `related posts` feature, you should specify the value as 0.
 ## If you want more related posts, you can do it too.

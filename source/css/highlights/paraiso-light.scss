@@ -1,0 +1,44 @@
+/*
+        Paraíso (light)
+        Created by Jan T. Sott (http://github.com/idleberg)
+        Inspired by the art of Rubens LP (http://www.rubenslp.com.br)
+*/
+
+.highlight {
+  color: #4f424c;
+  background: #e7e9db;
+
+  .code {
+    .comment, .quote {
+      color: #776e71;
+    }
+
+    .variable, .template-variable, .tag, .name, .selector-id, .selector-class, .regexp, .link, .meta {
+      color: #ef6155;
+    }
+
+    .number, .built_in, .builtin-name, .literal, .type, .params, .deletion {
+      color: #f99b15;
+    }
+
+    .title, .section, .attribute {
+      color: #fec418;
+    }
+
+    .string, .symbol, .bullet, .addition {
+      color: #48b685;
+    }
+
+    .keyword, .selector-tag {
+      color: #815ba4;
+    }
+
+    .emphasis {
+      font-style: italic;
+    }
+
+    .strong {
+      font-weight: bold;
+    }
+  }
+}

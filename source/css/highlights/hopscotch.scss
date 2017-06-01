@@ -1,0 +1,54 @@
+/*
+ * Hopscotch
+ * by Jan T. Sott
+ * https://github.com/idleberg/Hopscotch
+ *
+ * This work is licensed under the Creative Commons CC0 1.0 Universal License
+ */
+
+.highlight {
+  color: #b9b5b8;
+  background: #322931;
+
+  .code {
+    .comment, .quote {
+      color: #989498;
+    }
+
+    .variable, .template-variable, .attribute, .tag, .name, .selector-id, .selector-class, .regexp, .link, .deletion {
+      color: #dd464c;
+    }
+
+    .number, .built_in, .builtin-name, .literal, .type, .params {
+      color: #fd8b19;
+    }
+
+    .class .title {
+      color: #fdcc59;
+    }
+
+    .string, .symbol, .bullet, .addition {
+      color: #8fc13e;
+    }
+
+    .meta {
+      color: #149b93;
+    }
+
+    .function, .section, .title {
+      color: #1290bf;
+    }
+
+    .keyword, .selector-tag {
+      color: #c85e7c;
+    }
+
+    .emphasis {
+      font-style: italic;
+    }
+
+    .strong {
+      font-weight: bold;
+    }
+  }
+}

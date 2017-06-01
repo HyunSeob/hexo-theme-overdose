@@ -1,0 +1,42 @@
+.highlight {
+  color: #4d4d4c;
+  background: #fff;
+
+  .code {
+    .comment, .quote {
+      color: #8e908c;
+    }
+
+    .variable, .template-variable, .tag, .name, .selector-id, .selector-class, .regexp, .deletion {
+      color: #c82829;
+    }
+
+    .number, .built_in, .builtin-name, .literal, .type, .params, .meta, .link {
+      color: #f5871f;
+    }
+
+    .attribute {
+      color: #eab700;
+    }
+
+    .string, .symbol, .bullet, .addition {
+      color: #718c00;
+    }
+
+    .title, .section {
+      color: #4271ae;
+    }
+
+    .keyword, .selector-tag {
+      color: #8959a8;
+    }
+
+    .emphasis {
+      font-style: italic;
+    }
+
+    .strong {
+      font-weight: bold;
+    }
+  }
+}

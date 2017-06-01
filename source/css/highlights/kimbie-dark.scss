@@ -1,0 +1,45 @@
+/*
+        Name:         Kimbie (dark)
+        Author:     Jan T. Sott
+        License:    Creative Commons Attribution-ShareAlike 4.0 Unported License
+        URL:            https://github.com/idleberg/Kimbie-highlight.js
+*/
+
+.highlight {
+  color: #d3af86;
+  background: #221a0f;
+
+  .code {
+    .comment, .quote {
+      color: #d6baad;
+    }
+
+    .variable, .template-variable, .tag, .name, .selector-id, .selector-class, .regexp, .meta {
+      color: #dc3958;
+    }
+
+    .number, .built_in, .builtin-name, .literal, .type, .params, .deletion, .link {
+      color: #f79a32;
+    }
+
+    .title, .section, .attribute {
+      color: #f06431;
+    }
+
+    .string, .symbol, .bullet, .addition {
+      color: #889b4a;
+    }
+
+    .keyword, .selector-tag, .function {
+      color: #98676a;
+    }
+
+    .emphasis {
+      font-style: italic;
+    }
+
+    .strong {
+      font-weight: bold;
+    }
+  }
+}
