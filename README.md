@@ -10,7 +10,7 @@
 
 The Overdose is minimalistic, simple and beatiful hexo theme, specialized in Korean blogs.
 
-This theme works with hexo v3.2 or later.
+This theme works with hexo v3.2 or later and Node v7 or lower.
 
 ## Features
 
