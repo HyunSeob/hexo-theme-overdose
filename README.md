@@ -47,14 +47,9 @@ The overdose theme is using jade/sass(with bourbon). So install renderers.
 $ npm install --save hexo-renderer-jade hexo-renderer-bourbon
 ```
 
-And clone vendor repositories.
+And initialize this theme.
 ```
-$ cd themes/overdose;npm run clone
-```
-
-Then, copy the configuration example file.
-```
-$ cp _config.yml.example _config.yml
+$ cd themes/overdose;node init
 ```
 
 And then, specify `overdose` theme in your root configuration file.
