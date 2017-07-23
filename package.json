@@ -4,9 +4,9 @@
   "description": "The theme which you must be overdosed.",
   "private": true,
   "scripts": {
-    "font": "npm run noto && npm run spo",
-    "font-kr": "git clone https://github.com/hyunseob/noto-sans-kr ./source/libs/noto-sans-kr && git clone https://github.com/perfectacle/spoqa-han-sans-kr ./source/libs/spoqa-han-sans-kr && node rm-git",
-    "spo": "git clone https://github.com/perfectacle/spoqa-han-sans-kr ./source/libs/spoqa-han-sans-kr && git clone https://github.com/perfectacle/spoqa-han-sans-jp ./source/libs/spoqa-han-sans-jp && node rm-git",
+    "font": "npm run noto-kr && npm run spo",
+    "font-kr": "npm run noto-kr && npm run spo",
+    "spo": "npm run spo-kr && npm run spo-jp",
     "noto-kr": "git clone https://github.com/hyunseob/noto-sans-kr ./source/libs/noto-sans-kr && node rm-git",
     "spo-kr": "git clone https://github.com/perfectacle/spoqa-han-sans-kr ./source/libs/spoqa-han-sans-kr && node rm-git",
     "spo-jp": "git clone https://github.com/perfectacle/spoqa-han-sans-jp ./source/libs/spoqa-han-sans-jp && node rm-git",
