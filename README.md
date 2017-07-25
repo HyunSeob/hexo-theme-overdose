@@ -10,14 +10,14 @@
 
 The Overdose is minimalistic, simple and beatiful hexo theme, specialized in Korean blogs.
 
-This theme works with hexo v3.2 or later.
+This theme works with hexo v3.2 or later and Node v7 or lower.
 
 ## Features
 
 - Responsive design
 - Lightweight, not using jQuery or underscore.js, etc.
 - Various code highlighting theme (Thanks to @SungYeolWoo), Set [Dracula](https://draculatheme.com/) theme by default
-- Font setting
+- [Font setting](#font-setting)
   - noto-sans-kr
   - spoqa-han-sans-kr
   - spoqa-han-sans-jp
@@ -47,14 +47,9 @@ The overdose theme is using jade/sass(with bourbon). So install renderers.
 $ npm install --save hexo-renderer-jade hexo-renderer-bourbon
 ```
 
-And clone vendor repositories.
+And initialize this theme.
 ```
-$ cd themes/overdose;npm run clone
-```
-
-Then, copy the configuration example file.
-```
-$ cp _config.yml.example _config.yml
+$ cd themes/overdose;node init
 ```
 
 And then, specify `overdose` theme in your root configuration file.
@@ -66,6 +61,44 @@ theme: overdose
 Finally, start the hexo server and enjoy.
 ```
 $ hexo server
+```
+
+### Font setting
+You could choose from the following options.  
+After install, you should set font config in themes/overdose/_config.yml
+```yaml
+# Font
+## availableFontList: [
+##   'noto-sans-kr',
+##   'spoqa-han-sans-kr',
+##   'spoqa-han-sans-jp'
+## ]
+## If you don't want font, you shouldn't specify the font.
+font:
+```
+* noto-sans-kr
+```bash
+npm run noto-kr
+```
+* spoqa-han-sans-kr
+```bash
+npm run spo-kr
+```
+* spoqa-han-sans-jp
+```bash
+npm run spo-jp
+```
+* Korean fonts(noto-sans-kr, spoqa-han-sans-kr)
+```bash
+npm run font-kr
+```
+* Spoqa fonts(spoqa-han-sans-kr, spoqa-han-sans-jp)
+```bash
+npm run spoqa
+```
+* All fonts(noto-sans-kr, spoqa-han-sans-kr, spoqa-han-sans-jp)
+```bash
+npm run font
 ```
 
 ### Configuration
