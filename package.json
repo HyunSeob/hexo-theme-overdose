@@ -10,7 +10,10 @@
     "noto-kr": "git clone https://github.com/hyunseob/noto-sans-kr ./source/libs/noto-sans-kr && node rm-git",
     "spo-kr": "git clone https://github.com/perfectacle/spoqa-han-sans-kr ./source/libs/spoqa-han-sans-kr && node rm-git",
     "spo-jp": "git clone https://github.com/perfectacle/spoqa-han-sans-jp ./source/libs/spoqa-han-sans-jp && node rm-git",
-    "build": "node_modules/.bin/uglifyjs ./source/js/dynamicMenu.js -m -o ./source/js/dynamicMenu.min.js;node_modules/.bin/uglifyjs ./source/js/sharer.js -m -o ./source/js/sharer.min.js;cat ./source/js/dynamicMenu.min.js ./source/js/sharer.min.js > ./source/js/index.min.js"
+	"build-dynamicMenu": "node_modules/.bin/uglifyjs ./source/js/dynamicMenu.js -m -o ./source/js/dynamicMenu.min.js",
+    "build-share": "node_modules/.bin/uglifyjs ./source/js/sharer.js -m -o ./source/js/sharer.min.js",
+    "build-index" : "cat ./source/js/dynamicMenu.min.js ./source/js/sharer.min.js > ./source/js/index.min.js",
+    "build" : "npm run build-dynamicMenu && npm run build-share && npm run build-index"
   },
   "dependencies": {},
   "devDependencies": {
