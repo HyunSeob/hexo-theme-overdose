@@ -5,12 +5,13 @@ html(lang=config.language)
   body(itemscope itemtype="https://schema.org/WebPage")
     include menu
     .page-background
-    .content-outer
-      .content-inner(itemscope itemtype="https://schema.org/Blog")
-        if body
-          div!= body
-        else
-          block content
+    .content-container
+      .content-outer
+        .content-inner(itemscope itemtype="https://schema.org/Blog")
+          if body
+            div!= body
+          else
+            block content
     include footer
 
     if theme.dynamic_menu

@@ -4,6 +4,7 @@ $icon-size: 2.5rem;
 $icon-margin: ($menu-height - $icon-size) / 2;
 
 .menu {
+  display:table-row;
   width: 100%;
   background-color: $white;
   border-bottom: 1px solid $lighted-gray;
