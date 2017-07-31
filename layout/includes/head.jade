@@ -13,7 +13,8 @@
     fb_app_id: theme.facebook,
     fb_admins: theme.fb_admin,
     twitter_id: theme.twitter,
-    google_plus: theme.google_plus
+    google_plus: theme.google_plus,
+    url: config.url.replace(/($|\/$)/, "/") + page.canonical_path.replace('index.html', '')
   });
 - var highlight = (theme.highlight && (typeof theme.highlight === 'string')) ? theme.highlight : 'dracula';
 
