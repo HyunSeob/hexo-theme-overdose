@@ -13,13 +13,14 @@
     fb_app_id: theme.facebook,
     fb_admins: theme.fb_admin,
     twitter_id: theme.twitter,
-    google_plus: theme.google_plus
+    google_plus: theme.google_plus,
+    url: config.url.replace(/($|\/$)/, "/") + page.canonical_path.replace('index.html', '')
   });
 - var highlight = (theme.highlight && (typeof theme.highlight === 'string')) ? theme.highlight : 'dracula';
 
 meta(charset='UTF-8')
 meta(http-equiv="X-UA-Compatible" content="IE=edge")
-meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+meta(name="viewport" content="width=device-width, initial-scale=1")
 
 title= pageTitle
 
@@ -46,7 +47,7 @@ if is_post()
 if theme.favicon
   link(rel="icon" href=theme.favicon)
 if theme.profile.social.rss
-  link(rel="alternative" href=theme.profile.social.rss type="application/atom+xml" title=config.title)
+  link(rel="alternate" href=theme.profile.social.rss type="application/atom+xml" title=config.title)
 
 if theme.google_site_verification
   meta(name="google-site-verification" content="#{theme.google_site_verification}")
