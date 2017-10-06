@@ -67,12 +67,28 @@ $ hexo server
 
 See the [_config.yml.example](https://github.com/HyunSeob/hexo-theme-overdose/blob/master/_config.yml.example) file.
 
-## Disqus
+### Disqus
 
 ``` yml
 # _config.yml of base, not theme config
 # Please put your shortname of disqus here.
 disqus_shortname:
+```
+### LiveRe
+
+LiveRe is social media comment platcform suitable for Korean SNS, like disqus. <br>
+see [LiveRe](https://livere.com/). <br>
+You can get your uid from livere setting code as below.
+
+``` html
+<div id="lv-container" data-id="city" data-uid="your uid code">
+```
+how to set
+
+``` yml
+# Please put your uid of live here.
+liveRe:
+  uid:
 ```
 
 ### Post Front matter

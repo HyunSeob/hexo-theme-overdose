@@ -6,6 +6,7 @@
 }
 
 .menu {
+  display:table-row;
   width: 100%;
   background-color: var(--white);
   border-bottom: 1px solid var(--lighted-gray);

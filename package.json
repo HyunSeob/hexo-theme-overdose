@@ -4,7 +4,10 @@
   "description": "The theme which you must be overdosed.",
   "private": true,
   "scripts": {
-    "build": "uglifyjs ./source/js/dynamicMenu.js -m -o ./source/js/dynamicMenu.min.js;uglifyjs ./source/js/sharer.js -m -o ./source/js/sharer.min.js;cat ./source/js/dynamicMenu.min.js ./source/js/sharer.min.js > ./source/js/index.min.js",
+	  "build-dynamicMenu": "node_modules/.bin/uglifyjs ./source/js/dynamicMenu.js -m -o ./source/js/dynamicMenu.min.js",
+    "build-share": "node_modules/.bin/uglifyjs ./source/js/sharer.js -m -o ./source/js/sharer.min.js",
+    "build-index" : "cat ./source/js/dynamicMenu.min.js ./source/js/sharer.min.js > ./source/js/index.min.js",
+    "build" : "npm run build-dynamicMenu && npm run build-share && npm run build-index",
     "cssbuild": "postcss \"src/css/index.css\" --output \"source/css/index.css\""
   },
   "devDependencies": {
