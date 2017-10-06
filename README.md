@@ -63,44 +63,6 @@ Finally, start the hexo server and enjoy.
 $ hexo server
 ```
 
-### Font setting
-You could choose from the following options.  
-After install, you should set font config in themes/overdose/_config.yml
-```yaml
-# Font
-## availableFontList: [
-##   'noto-sans-kr',
-##   'spoqa-han-sans-kr',
-##   'spoqa-han-sans-jp'
-## ]
-## If you don't want font, you shouldn't specify the font.
-font:
-```
-* noto-sans-kr
-```bash
-npm run noto-kr
-```
-* spoqa-han-sans-kr
-```bash
-npm run spo-kr
-```
-* spoqa-han-sans-jp
-```bash
-npm run spo-jp
-```
-* Korean fonts(noto-sans-kr, spoqa-han-sans-kr)
-```bash
-npm run font-kr
-```
-* Spoqa fonts(spoqa-han-sans-kr, spoqa-han-sans-jp)
-```bash
-npm run spoqa
-```
-* All fonts(noto-sans-kr, spoqa-han-sans-kr, spoqa-han-sans-jp)
-```bash
-npm run font
-```
-
 ### Configuration
 
 See the [_config.yml.example](https://github.com/HyunSeob/hexo-theme-overdose/blob/master/_config.yml.example) file.
