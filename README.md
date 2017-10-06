@@ -42,14 +42,14 @@ $ cd your/hexo/directory
 $ git clone https://github.com/HyunSeob/hexo-theme-overdose.git themes/overdose
 ```
 
-The overdose theme is using jade/sass(with bourbon). So install renderers.
+This theme is using pug. So install renderer.
 ```
-$ npm install --save hexo-renderer-jade hexo-renderer-bourbon
+$ npm install --save hexo-renderer-pug # or you can still use hexo-renderer-jade, too.
 ```
 
-And initialize this theme.
+Then, copy the configuration example file.
 ```
-$ cd themes/overdose;node init
+$ cp _config.yml.example _config.yml
 ```
 
 And then, specify `overdose` theme in your root configuration file.
@@ -115,7 +115,7 @@ tags:
 
 - [x] Chrome
 - [x] Edge
-- [x] IE 9+ (CSS3 Animation is not worked in IE9)
+- [x] IE 10+
 - [x] Firefox
 - [x] Safari
 - [x] Android Browser
@@ -124,6 +124,5 @@ tags:
 ## To Do
 
 - i18n
-- LiveRe
 - Facebook Comments
 - Featured posts
