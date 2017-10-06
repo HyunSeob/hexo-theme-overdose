@@ -5,7 +5,7 @@
   text-align: center;
   padding: 1rem 0;
 
-  & .current, a {
+  & .current, & a {
     display: inline-block;
     height: 1.5rem;
     line-height: 1.5rem;
