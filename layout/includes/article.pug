@@ -51,7 +51,7 @@ article#article.article(itemscope itemtype="https://schema.org/BlogPosting")
   
   include sharer
 
-  if theme.liveRe.uid
+  if theme.liveRe && theme.liveRe.uid
     #lv-container(data-id="city", data-uid="#{theme.liveRe.uid}")
     script.
       (function(d, s) {
