@@ -1,0 +1,29 @@
+/*
+
+Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+
+*/
+.highlight {
+  color: #444;
+  background: #f0f0f0; }
+  .highlight .code .subst {
+    color: #444; }
+  .highlight .code .keyword, .highlight .code .attribute, .highlight .code .selector-tag, .highlight .code .meta-keyword, .highlight .code .doctag, .highlight .code .name {
+    font-weight: bold; }
+  .highlight .code .built_in, .highlight .code .literal, .highlight .code .bullet, .highlight .code .code, .highlight .code .addition {
+    color: #1f811f; }
+  .highlight .code .regexp, .highlight .code .symbol, .highlight .code .variable, .highlight .code .template-variable, .highlight .code .link, .highlight .code .selector-attr, .highlight .code .selector-pseudo {
+    color: #bc6060; }
+  .highlight .code .type, .highlight .code .string, .highlight .code .number, .highlight .code .selector-id, .highlight .code .selector-class, .highlight .code .quote, .highlight .code .template-tag, .highlight .code .deletion {
+    color: #800; }
+  .highlight .code .title, .highlight .code .section {
+    color: #800;
+    font-weight: bold; }
+  .highlight .code .comment {
+    color: #888; }
+  .highlight .code .meta {
+    color: #2b6ea1; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .strong {
+    font-weight: bold; }

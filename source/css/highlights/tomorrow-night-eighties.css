@@ -1,0 +1,24 @@
+/* Tomorrow Night Eighties Theme */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+.highlight {
+  color: #ccc;
+  background: #2d2d2d; }
+  .highlight .code .comment, .highlight .code .quote {
+    color: #999; }
+  .highlight .code .variable, .highlight .code .template-variable, .highlight .code .tag, .highlight .code .name, .highlight .code .selector-id, .highlight .code .selector-class, .highlight .code .regexp, .highlight .code .deletion {
+    color: #f2777a; }
+  .highlight .code .number, .highlight .code .built_in, .highlight .code .builtin-name, .highlight .code .literal, .highlight .code .type, .highlight .code .params, .highlight .code .meta, .highlight .code .link {
+    color: #f99157; }
+  .highlight .code .attribute {
+    color: #fc6; }
+  .highlight .code .string, .highlight .code .symbol, .highlight .code .bullet, .highlight .code .addition {
+    color: #9c9; }
+  .highlight .code .title, .highlight .code .section {
+    color: #69c; }
+  .highlight .code .keyword, .highlight .code .selector-tag {
+    color: #c9c; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .strong {
+    font-weight: bold; }

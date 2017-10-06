@@ -1,0 +1,43 @@
+/*
+ * converted by ProNomad(github.com/SungYeolWoo) from highlightjs
+ */
+.highlight {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #383a42;
+  background: #fafafa; }
+
+.comment, .quote {
+  color: #a0a1a7;
+  font-style: italic; }
+
+.doctag, .keyword, .formula {
+  color: #a626a4; }
+
+.section, .name, .selector-tag, .deletion, .subst {
+  color: #e45649; }
+
+.literal {
+  color: #0184bb; }
+
+.string, .regexp, .addition, .attribute, .meta-string {
+  color: #50a14f; }
+
+.built_in, .class .title {
+  color: #c18401; }
+
+.attr, .variable, .template-variable, .type, .selector-class, .selector-attr, .selector-pseudo, .number {
+  color: #986801; }
+
+.symbol, .bullet, .link, .meta, .selector-id, .title {
+  color: #4078f2; }
+
+.emphasis {
+  font-style: italic; }
+
+.strong {
+  font-weight: bold; }
+
+.link {
+  text-decoration: underline; }

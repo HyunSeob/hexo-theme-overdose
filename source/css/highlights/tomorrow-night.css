@@ -1,0 +1,23 @@
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+.highlight {
+  color: #c5c8c6;
+  background: #1d1f21; }
+  .highlight .code .comment, .highlight .code .quote {
+    color: #969896; }
+  .highlight .code .variable, .highlight .code .template-variable, .highlight .code .tag, .highlight .code .name, .highlight .code .selector-id, .highlight .code .selector-class, .highlight .code .regexp, .highlight .code .deletion {
+    color: #c66; }
+  .highlight .code .number, .highlight .code .built_in, .highlight .code .builtin-name, .highlight .code .literal, .highlight .code .type, .highlight .code .params, .highlight .code .meta, .highlight .code .link {
+    color: #de935f; }
+  .highlight .code .attribute {
+    color: #f0c674; }
+  .highlight .code .string, .highlight .code .symbol, .highlight .code .bullet, .highlight .code .addition {
+    color: #b5bd68; }
+  .highlight .code .title, .highlight .code .section {
+    color: #81a2be; }
+  .highlight .code .keyword, .highlight .code .selector-tag {
+    color: #b294bb; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .strong {
+    font-weight: bold; }

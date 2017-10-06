@@ -1,0 +1,30 @@
+/* Base16 Atelier Savanna Light - Theme */
+/* by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/savanna) */
+/* Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16) */
+.highlight {
+  color: #526057;
+  background: #ecf4ee; }
+  .highlight .code .comment, .highlight .code .quote {
+    color: #5f6d64; }
+  .highlight .code .variable, .highlight .code .template-variable, .highlight .code .attribute, .highlight .code .tag, .highlight .code .name, .highlight .code .regexp, .highlight .code .link, .highlight .code .selector-id, .highlight .code .selector-class {
+    color: #b16139; }
+  .highlight .code .number, .highlight .code .meta, .highlight .code .built_in, .highlight .code .builtin-name, .highlight .code .literal, .highlight .code .type, .highlight .code .params {
+    color: #9f713c; }
+  .highlight .code .string, .highlight .code .symbol, .highlight .code .bullet {
+    color: #489963; }
+  .highlight .code .title, .highlight .code .section {
+    color: #478c90; }
+  .highlight .code .keyword, .highlight .code .selector-tag {
+    color: #55859b; }
+  .highlight .code .deletion, .highlight .code .addition {
+    color: #171c19;
+    display: inline-block;
+    width: 100%; }
+  .highlight .code .deletion {
+    background-color: #b16139; }
+  .highlight .code .addition {
+    background-color: #489963; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .strong {
+    font-weight: bold; }

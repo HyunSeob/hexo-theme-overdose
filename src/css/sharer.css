@@ -1,0 +1,61 @@
+@import "./variables.css";
+
+:root {
+  --sharer-height: 3rem;
+
+  --color-facebook: #3B5998;
+  --color-twitter: #00ACED;
+  --color-pinterest: #B5071A;
+  --color-pocket: #EF4056;
+}
+
+.sharer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--sharer-height);
+  background-color: #fff;
+  z-index: 2;
+  border-top: 1px solid var(--lighted-gray);
+  transition: transform 0.3s ease;
+}
+
+.sharer--hide {
+  transform: translateY(var(--sharer-height));
+}
+
+.sharer-inner {
+  padding: 0 1rem;
+  max-width: var(--content-width);
+  margin: auto;
+}
+
+.sharer__right {
+  float: right;
+}
+
+.sharer__item {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+  line-height: var(--sharer-height);
+  color: var(--gray);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#sharer-facebook:hover {
+  color: var(--color-facebook);
+}
+#sharer-twitter:hover {
+  color: var(--color-twitter);
+}
+#sharer-pinterest:hover {
+  color: var(--color-pinterest);
+}
+#sharer-pocket:hover {
+  color: var(--color-pocket);
+}

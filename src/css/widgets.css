@@ -1,0 +1,83 @@
+@import "./variables.css";
+
+.widgets {
+  background-color: var(--semi-white);
+}
+
+.widgets-inner {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  @media (--desktop) {
+    padding: 0 0.5rem;
+    text-align: center;
+  }
+}
+
+.widgets__item {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  padding: 0 1rem;
+
+  @media (--desktop) {
+    width: 33.33%;
+    padding: 0 0.5rem;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  /* Widgets common styles */
+  & ul {
+    padding: 0;
+    list-style: none;
+
+    & ul {
+      padding-left: 1rem;
+
+      & li:before {
+        float: left;
+        padding-right: 0.25rem;
+        content: '-';
+      }
+    }
+  }
+
+  & li {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  & a {
+    color: var(--darked-gray);
+    &:hover {
+      color: var(--primary-sky);
+    }
+  }
+}
+
+.widgets__item__heading {
+  margin-top: 0;
+}
+
+.category-list-link, .archive-list-link, .tag-list-link {
+  float: left;
+}
+
+.category-list-count, .archive-list-count, .tag-list-count {
+  font-size: 0.75em;
+  padding-left: 0.5em;
+  float: left;
+
+  &:before {
+    content: '(';
+  }
+  &:after {
+    content: ')';
+  }
+}

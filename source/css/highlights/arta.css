@@ -1,0 +1,27 @@
+/*
+Date: 17.V.2011
+Author: pumbur <pumbur@pumbur.net>
+*/
+.highlight {
+  color: #aaa;
+  background: #222; }
+  .highlight .code .subst {
+    color: #aaa; }
+  .highlight .code .section {
+    color: #fff; }
+  .highlight .code .comment, .highlight .code .quote, .highlight .code .meta {
+    color: #444; }
+  .highlight .code .string, .highlight .code .symbol, .highlight .code .bullet, .highlight .code .regexp {
+    color: #fc3; }
+  .highlight .code .number, .highlight .code .addition {
+    color: #0c6; }
+  .highlight .code .built_in, .highlight .code .builtin-name, .highlight .code .literal, .highlight .code .type, .highlight .code .template-variable, .highlight .code .attribute, .highlight .code .link {
+    color: #32aaee; }
+  .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .name, .highlight .code .selector-id, .highlight .code .selector-class {
+    color: #64a; }
+  .highlight .code .title, .highlight .code .variable, .highlight .code .deletion, .highlight .code .template-tag {
+    color: #b16; }
+  .highlight .code .section, .highlight .code .doctag, .highlight .code .strong {
+    font-weight: bold; }
+  .highlight .code .emphasis {
+    font-style: italic; }

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*
+
+Colorbrewer theme
+Original: https://github.com/mbostock/colorbrewer-theme (c) Mike Bostock <mike@ocks.org>
+Ported by Fabrício Tavares de Oliveira
+
+*/
+.highlight {
+  color: #000;
+  background: #fff; }
+  .highlight .code .subst {
+    color: #000; }
+  .highlight .code .string, .highlight .code .meta, .highlight .code .symbol, .highlight .code .template-tag, .highlight .code .template-variable, .highlight .code .addition {
+    color: #756bb1; }
+  .highlight .code .comment, .highlight .code .quote {
+    color: #636363; }
+  .highlight .code .number, .highlight .code .regexp, .highlight .code .literal, .highlight .code .bullet, .highlight .code .link {
+    color: #31a354; }
+  .highlight .code .deletion, .highlight .code .variable {
+    color: #88f; }
+  .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .title, .highlight .code .section, .highlight .code .built_in, .highlight .code .doctag, .highlight .code .type, .highlight .code .tag, .highlight .code .name, .highlight .code .selector-id, .highlight .code .selector-class, .highlight .code .strong {
+    color: #3182bd; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .attribute {
+    color: #e6550d; }

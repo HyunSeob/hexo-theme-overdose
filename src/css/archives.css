@@ -1,0 +1,30 @@
+@import "./variables.css";
+
+.archive-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.archive-list-item {
+  margin-top: 12px;
+  &:before {
+    content: '-';
+    margin-right: 4px;
+  }
+}
+
+.archive-list-link {
+  color: var(--black);
+  margin-right: 4px;
+}
+
+.archive-list-count {
+  font-size: 14px;
+  color: var(--gray);
+  &:before {
+    content: '('
+  }
+  &:after {
+    content: ')'
+  }
+}

@@ -1,0 +1,44 @@
+/*
+Docco style used in http://jashkenas.github.com/docco/ converted by Simon Madine (@thingsinjars)
+*/
+.highlight {
+  color: #000;
+  background: #f8f8ff; }
+  .highlight .code .comment, .highlight .code .quote {
+    color: #408080;
+    font-style: italic; }
+  .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .literal, .highlight .code .subst {
+    color: #954121; }
+  .highlight .code .number {
+    color: #40a070; }
+  .highlight .code .string, .highlight .code .doctag {
+    color: #219161; }
+  .highlight .code .selector-id, .highlight .code .selector-class, .highlight .code .section, .highlight .code .type {
+    color: #19469d; }
+  .highlight .code .params {
+    color: #00f; }
+  .highlight .code .title {
+    color: #458;
+    font-weight: bold; }
+  .highlight .code .tag, .highlight .code .name, .highlight .code .attribute {
+    color: #000080;
+    font-weight: normal; }
+  .highlight .code .variable, .highlight .code .template-variable {
+    color: #008080; }
+  .highlight .code .regexp, .highlight .code .link {
+    color: #b68; }
+  .highlight .code .symbol, .highlight .code .bullet {
+    color: #990073; }
+  .highlight .code .built_in, .highlight .code .builtin-name {
+    color: #0086b3; }
+  .highlight .code .meta {
+    color: #999;
+    font-weight: bold; }
+  .highlight .code .deletion {
+    background: #fdd; }
+  .highlight .code .addition {
+    background: #dfd; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .strong {
+    font-weight: bold; }

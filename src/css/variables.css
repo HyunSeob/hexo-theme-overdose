@@ -1,0 +1,27 @@
+:root {
+  /* Colors */
+  --white: #FFF;
+  --semi-white: #F6F6F6;
+  --black: #454545;
+  --bold-black: #222;
+  --gray: #999;
+  --darked-gray: #666;
+  --lighted-gray: #EDEDED;
+  --primary-sky: rgb(89, 171, 227);
+  --darked-sky: color(var(--primary-sky) shade(20%));
+  --lighted-sky: color(var(--primary-sky) tint(20%));
+  --secondary-yellow: #E28F0B;
+
+  /* Pixels */
+  --em-base: 16px;
+
+  --base-margin: 1.5rem;
+  --menu-height: 4rem;
+  --content-width: 45rem;
+  --container-width: 72rem;
+
+  --bold-font: 500;
+
+  @custom-media --mobile only screen and (max-width: 624px);
+  @custom-media --desktop only screen and (min-width: 624px);
+}

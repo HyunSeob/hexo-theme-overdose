@@ -10,10 +10,15 @@
     "noto-kr": "git clone https://github.com/hyunseob/noto-sans-kr ./source/libs/noto-sans-kr && node rm-git",
     "spo-kr": "git clone https://github.com/perfectacle/spoqa-han-sans-kr ./source/libs/spoqa-han-sans-kr && node rm-git",
     "spo-jp": "git clone https://github.com/perfectacle/spoqa-han-sans-jp ./source/libs/spoqa-han-sans-jp && node rm-git",
-    "build": "node_modules/.bin/uglifyjs ./source/js/dynamicMenu.js -m -o ./source/js/dynamicMenu.min.js;node_modules/.bin/uglifyjs ./source/js/sharer.js -m -o ./source/js/sharer.min.js;cat ./source/js/dynamicMenu.min.js ./source/js/sharer.min.js > ./source/js/index.min.js"
+    "build": "uglifyjs ./source/js/dynamicMenu.js -m -o ./source/js/dynamicMenu.min.js;uglifyjs ./source/js/sharer.js -m -o ./source/js/sharer.min.js;cat ./source/js/dynamicMenu.min.js ./source/js/sharer.min.js > ./source/js/index.min.js",
+    "cssbuild": "postcss \"src/css/index.css\" --output \"source/css/index.css\""
   },
-  "dependencies": {},
   "devDependencies": {
+    "cssnano": "^3.10.0",
+    "normalize.css": "^7.0.0",
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0",
     "uglify-js": "^2.7.3"
   }
 }

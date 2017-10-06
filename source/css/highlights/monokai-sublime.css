@@ -1,0 +1,30 @@
+/*
+
+Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+
+*/
+.highlight {
+  color: #f8f8f2;
+  background: #23241f; }
+  .highlight .code .highlight, .highlight .code .tag, .highlight .code .subst {
+    color: #f8f8f2; }
+  .highlight .code .strong, .highlight .code .emphasis {
+    color: #a8a8a2; }
+  .highlight .code .bullet, .highlight .code .quote, .highlight .code .number, .highlight .code .regexp, .highlight .code .literal, .highlight .code .link {
+    color: #ae81ff; }
+  .highlight .code .code, .highlight .code .title, .highlight .code .section, .highlight .code .selector-class {
+    color: #a6e22e; }
+  .highlight .code .strong {
+    font-weight: bold; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .name, .highlight .code .attr {
+    color: #f92672; }
+  .highlight .code .symbol, .highlight .code .attribute {
+    color: #66d9ef; }
+  .highlight .code .params, .highlight .code .class .title {
+    color: #f8f8f2; }
+  .highlight .code .string, .highlight .code .type, .highlight .code .built_in, .highlight .code .builtin-name, .highlight .code .selector-id, .highlight .code .selector-attr, .highlight .code .selector-pseudo, .highlight .code .addition, .highlight .code .variable, .highlight .code .template-variable {
+    color: #e6db74; }
+  .highlight .code .comment, .highlight .code .deletion, .highlight .code .meta {
+    color: #75715e; }

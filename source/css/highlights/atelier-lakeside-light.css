@@ -1,0 +1,22 @@
+/* Base16 Atelier Lakeside Light - Theme */
+/* by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/lakeside) */
+/* Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16) */
+.highlight {
+  color: #516d7b;
+  background: #ebf8ff; }
+  .highlight .code .comment, .highlight .code .quote {
+    color: #5a7b8c; }
+  .highlight .code .variable, .highlight .code .template-variable, .highlight .code .attribute, .highlight .code .tag, .highlight .code .name, .highlight .code .regexp, .highlight .code .link, .highlight .code .selector-id, .highlight .code .selector-class {
+    color: #d22d72; }
+  .highlight .code .number, .highlight .code .meta, .highlight .code .built_in, .highlight .code .builtin-name, .highlight .code .literal, .highlight .code .type, .highlight .code .params {
+    color: #935c25; }
+  .highlight .code .string, .highlight .code .symbol, .highlight .code .bullet {
+    color: #568c3b; }
+  .highlight .code .title, .highlight .code .section {
+    color: #257fad; }
+  .highlight .code .keyword, .highlight .code .selector-tag {
+    color: #6b6bb8; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .strong {
+    font-weight: bold; }
