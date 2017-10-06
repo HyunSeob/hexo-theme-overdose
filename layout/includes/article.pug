@@ -15,10 +15,10 @@ article#article.article(itemscope itemtype="https://schema.org/BlogPosting")
             span.article__meta__categories__separator >
   unless (page.banner && page.banner.url) || (page.photos && page.photos.length)
     hr
-  
+
   .article__contents
     != page.content
-  
+
   if page.tags && page.tags.length
     .article__tags
      - page.tags.each(function(tag) {
@@ -35,7 +35,7 @@ article#article.article(itemscope itemtype="https://schema.org/BlogPosting")
       alt=config.author)
     a.article__author__link(
       href=theme.profile.link
-      title="About #{config.author}"
+      title=`About ${config.author}`
       rel="author"
     )= config.author
     p.article__author__desc= theme.profile.description || config.description
@@ -44,15 +44,15 @@ article#article.article(itemscope itemtype="https://schema.org/BlogPosting")
         if url
           a.article__author__socials__item(
             href=url
-            title="#{label}"
+            title=label
             target="_blank")
-            i(class="fa fa-#{label}")
-    meta(itemprop="name" content="#{config.author}")
-  
+            i(class=`fa fa-${label}`)
+    meta(itemprop="name" content=config.author)
+
   include sharer
 
   if theme.liveRe && theme.liveRe.uid
-    #lv-container(data-id="city", data-uid="#{theme.liveRe.uid}")
+    #lv-container(data-id="city", data-uid=theme.liveRe.uid)
     script.
       (function(d, s) {
          var j, e = d.getElementsByTagName(s)[0];
@@ -63,7 +63,7 @@ article#article.article(itemscope itemtype="https://schema.org/BlogPosting")
          e.parentNode.insertBefore(j, e);
       })(document, 'script');
 
-    
+
   // Disqus Code
   if config.disqus_shortname
     #disqus_thread
@@ -75,21 +75,21 @@ article#article.article(itemscope itemtype="https://schema.org/BlogPosting")
         (d.head || d.body).appendChild(s);
       })();
     noscript Enable JavaScript to see comments.
-    
+
   // Meta Tags for Structured Data
   - var truncOptions = { length: 200, separator: ' ' };
   - var banner = page.banner || theme.default;
-  meta(itemprop="dateModified" content="#{date_xml(page.updated)}")
-  meta(itemprop="articleBody" content="#{truncate(strip_html(page.content), truncOptions)}")
-  meta(itemprop="url" content="#{config.url + '/' + page.path}")
-  meta(itemprop="mainEntityOfPage" content="#{config.url + '/' + page.path}")
+  meta(itemprop="dateModified" content=date_xml(page.updated))
+  meta(itemprop="articleBody" content=truncate(strip_html(page.content), truncOptions))
+  meta(itemprop="url" content=config.url + '/' + page.path)
+  meta(itemprop="mainEntityOfPage" content=config.url + '/' + page.path)
   div(itemscope itemtype="https://schema.org/Organization" itemprop="publisher")
-    meta(itemprop="name" content="#{config.title}")
+    meta(itemprop="name" content=config.title)
     div(itemscope itemprop="logo" itemtype="https://schema.org/ImageObject")
-      meta(itemprop="url" content="#{config.url + theme.favicon}")
+      meta(itemprop="url" content=config.url + theme.favicon)
   div(itemscope itemtype="https://schema.org/ImageObject" itemprop="image")
-    meta(itemprop="contentUrl" content="#{config.url + banner.url}")
-    meta(itemprop="url" content="#{config.url + banner.url}")
+    meta(itemprop="contentUrl" content=config.url + banner.url)
+    meta(itemprop="url" content=config.url + banner.url)
     meta(itemprop="width" content=banner.width)
     meta(itemprop="height" content=banner.height)
-    
+
