@@ -159,7 +159,7 @@
       }
     }
 
-    & ul, ol {
+    & ul, & ol {
       list-style: none;
       & li {
         position: relative;
