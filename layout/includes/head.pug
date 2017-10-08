@@ -39,6 +39,10 @@ link(rel="stylesheet" href="/css/highlights/" + highlight + ".css")
 | !{ openGraph }
 if is_post()
   meta(property="article:author" content=theme.profile.social.facebook || config.author)
+  meta(property="twitter:label1" content="Published at")
+  meta(property="twitter:data1" content=full_date(page.date))
+  meta(property="twitter:label2" content="Written by")
+  meta(property="twitter:data2" content=config.author)
 
 if theme.favicon
   link(rel="icon" href=theme.favicon)
