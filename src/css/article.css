@@ -19,6 +19,8 @@
 
       @media (--mobile) {
         width: calc(100% + 2rem);
+        margin-left: -1rem;
+        margin-right: -1rem;
       }
 
       @media (--desktop) {
@@ -40,9 +42,9 @@
 
     & blockquote {
       background-color: var(--semi-white);
-      padding: var(--base-margin);
-      margin-left: 0;
-      margin-right: 0;
+      padding: var(--base-margin) 1rem;
+      margin-left: -1rem;
+      margin-right: -1rem;
       & p {
         margin: 0;
         & + p {
@@ -80,9 +82,10 @@
     }
 
     & figure.highlight {
-      padding: 0 var(--base-margin);
-      margin-left: 0;
-      margin-right: 0;
+      padding: 0 1rem;
+      margin-left: -1rem;
+      margin-right: -1rem;
+
       & * {
         font-family: consolas, monospace;
       }
@@ -137,8 +140,8 @@
 
     & iframe {
       display: block;
-      margin: 1rem 0;
-      width: 100%;
+      margin: 1rem -1rem;
+      width: calc(100% + 2rem);
     }
 
     & .video-container {

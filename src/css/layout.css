@@ -11,7 +11,7 @@
 }
 
 .content-outer {
-  margin-top: var(--menu-height * 2);
+  margin-top: calc(var(--menu-height) * 2);
   @media (--desktop) {
     margin-top: var(--menu-height);
   }
