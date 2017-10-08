@@ -1,0 +1,8 @@
+@import "./variables.css";
+
+.copyright {
+  background-color: var(--lighted-gray);
+  text-align: center;
+  padding: 2rem 0 5rem;
+  margin: 0;
+}

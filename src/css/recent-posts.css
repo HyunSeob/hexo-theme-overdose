@@ -1,0 +1,62 @@
+@import "./variables.css";
+
+:root {
+  --post-image-size: 64px;
+}
+
+.recent-posts {
+  padding-left: 0;
+}
+
+.recent-posts__item {
+  position: relative;
+  height: var(--post-image-size);
+  margin-top: 12px;
+  padding-left: var(--post-image-size);
+}
+
+.recent-posts__item__image {
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.recent-posts__item__image__inner {
+  width: var(--post-image-size);
+  height: var(--post-image-size);
+  float: left;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: inline-block;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.recent-posts__item__meta {
+  padding: 13px 0 0 12px;
+}
+
+.recent-posts__item__meta__link {
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+
+.recent-posts__item__meta__time {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.recent-posts__item__meta__link,
+.recent-posts__item__meta__time {
+  display: block;
+  line-height: 1.2em;
+}

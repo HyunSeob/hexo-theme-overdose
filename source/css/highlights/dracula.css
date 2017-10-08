@@ -1,0 +1,64 @@
+.highlight {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #282a36;
+  color: #f8f8f2; }
+  .highlight .line {
+    min-height: 1.5em; }
+  .highlight .subst {
+    color: #f8f8f2; }
+  .highlight .keyword,
+  .highlight .selector-tag,
+  .highlight .section,
+  .highlight .link {
+    color: #ff79c6; }
+  .highlight .literal,
+  .highlight .number {
+    color: #bd93f9; }
+  .highlight .function .keyword {
+    color: #8be9fd; }
+  .highlight .title {
+    color: #50fa7b; }
+  .highlight .params {
+    color: #ffb86c; }
+  .highlight .string,
+  .highlight .name,
+  .highlight .type,
+  .highlight .symbol,
+  .highlight .bullet,
+  .highlight .addition,
+  .highlight .variable,
+  .highlight .template-tag,
+  .highlight .template-variable {
+    color: #f1fa8c; }
+  .highlight .string .subst {
+    color: #ff79c6; }
+  .highlight .comment,
+  .highlight .quote,
+  .highlight .deletion,
+  .highlight .meta {
+    color: #6272a4; }
+  .highlight .keyword,
+  .highlight .selector-tag,
+  .highlight .literal,
+  .highlight .title,
+  .highlight .section,
+  .highlight .doctag,
+  .highlight .type,
+  .highlight .name,
+  .highlight .strong {
+    font-weight: bold; }
+  .highlight .emphasis, .highlight .built_in {
+    font-style: italic; }
+  .highlight .built_in {
+    color: #8be9fd; }
+  .highlight .tag .name {
+    color: #ff79c6; }
+  .highlight .tag .attr {
+    color: #50fa7b; }
+  .highlight .selector-id,
+  .highlight .selector-class {
+    color: #50fa7b; }
+  .highlight .attribute {
+    color: #8be9fd; }

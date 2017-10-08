@@ -1,0 +1,20 @@
+/*
+Monokai style - ported by Luigi Maselli - http://grigio.org
+*/
+.highlight {
+  color: #ddd;
+  background: #272822; }
+  .highlight .code .tag, .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .literal, .highlight .code .strong, .highlight .code .name {
+    color: #f92672; }
+  .highlight .code .code {
+    color: #66d9ef; }
+  .highlight .code .class .title {
+    color: #fff; }
+  .highlight .code .attribute, .highlight .code .symbol, .highlight .code .regexp, .highlight .code .link {
+    color: #bf79db; }
+  .highlight .code .string, .highlight .code .bullet, .highlight .code .subst, .highlight .code .title, .highlight .code .section, .highlight .code .emphasis, .highlight .code .type, .highlight .code .built_in, .highlight .code .builtin-name, .highlight .code .selector-attr, .highlight .code .selector-pseudo, .highlight .code .addition, .highlight .code .variable, .highlight .code .template-tag, .highlight .code .template-variable {
+    color: #a6e22e; }
+  .highlight .code .comment, .highlight .code .quote, .highlight .code .deletion, .highlight .code .meta {
+    color: #75715e; }
+  .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .literal, .highlight .code .doctag, .highlight .code .title, .highlight .code .section, .highlight .code .type, .highlight .code .selector-id {
+    font-weight: bold; }

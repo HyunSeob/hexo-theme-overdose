@@ -1,0 +1,19 @@
+extends includes/layout
+
+block content
+  include includes/article
+      
+  - var relatedPosts = related_posts(page, theme.related_posts);
+  
+  if relatedPosts.length
+    section.related-posts
+      h3 Related posts
+      each post in relatedPosts
+        .related-posts__item__wrapper
+          a.related-posts__item(href=url_for(post.path))
+            - var banner = bannerOf(post) || theme.default.url;
+            .related-posts__item__background(style={
+              'background-image': `url('${banner}')`
+            })
+            .related-posts__item__overlay
+            span.related-posts__item__title= post.title || 'Untitled'

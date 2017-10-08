@@ -1,0 +1,27 @@
+/*
+Description: Magula style for highligh.js
+Author: Ruslan Keba <rukeba@gmail.com>
+Website: http://rukeba.com/
+Version: 1.0
+Date: 2009-01-03
+Music: Aphex Twin / Xtal
+*/
+.highlight {
+  background-color: #f4f4f4; }
+  .highlight .code .highlight, .highlight .code .subst {
+    color: #000; }
+  .highlight .code .string, .highlight .code .title, .highlight .code .symbol, .highlight .code .bullet, .highlight .code .attribute, .highlight .code .addition, .highlight .code .variable, .highlight .code .template-tag, .highlight .code .template-variable {
+    color: #050; }
+  .highlight .code .comment, .highlight .code .quote {
+    color: #777; }
+  .highlight .code .number, .highlight .code .regexp, .highlight .code .literal, .highlight .code .type, .highlight .code .link {
+    color: #800; }
+  .highlight .code .deletion, .highlight .code .meta {
+    color: #00e; }
+  .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .doctag, .highlight .code .title, .highlight .code .section, .highlight .code .built_in, .highlight .code .tag, .highlight .code .name {
+    font-weight: bold;
+    color: #000080; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .strong {
+    font-weight: bold; }

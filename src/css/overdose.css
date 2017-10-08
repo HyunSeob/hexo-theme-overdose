@@ -1,0 +1,40 @@
+@import "./variables.css";
+
+/* Global common styles */
+html {
+  height: 100%;
+  font-size: 14px;
+  @media (--desktop) {
+    font-size: var(--em-base);
+  }
+}
+
+body {
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  color: var(--black);
+  line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  table-layout: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-sky);
+  transition: color 0.3s ease;
+  &:hover {
+    color: var(--darked-sky);
+  }
+}
+
+hr {
+  margin: var(--base-margin) 0;
+  border: 0;
+  border-bottom: 1px solid var(--lighted-gray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--bold-font);
+}

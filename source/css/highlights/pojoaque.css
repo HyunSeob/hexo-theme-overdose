@@ -1,0 +1,35 @@
+/*
+
+Pojoaque Style by Jason Tate
+http://web-cms-designs.com/ftopict-10-pojoaque-style-for-highlight-js-code-highlighter.html
+Based on Solarized Style from http://ethanschoonover.com/solarized
+
+*/
+.highlight {
+  color: #dccf8f;
+  background: url("pojoaque.jpg") repeat scroll left top #181914; }
+  .highlight .code .comment, .highlight .code .quote {
+    color: #586e75;
+    font-style: italic; }
+  .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .literal, .highlight .code .addition {
+    color: #b64926; }
+  .highlight .code .number, .highlight .code .string, .highlight .code .doctag, .highlight .code .regexp {
+    color: #468966; }
+  .highlight .code .title, .highlight .code .section, .highlight .code .built_in, .highlight .code .name {
+    color: #ffb03b; }
+  .highlight .code .variable, .highlight .code .template-variable, .highlight .code .class .title, .highlight .code .type, .highlight .code .tag {
+    color: #b58900; }
+  .highlight .code .attribute {
+    color: #b89859; }
+  .highlight .code .symbol, .highlight .code .bullet, .highlight .code .link, .highlight .code .subst, .highlight .code .meta {
+    color: #cb4b16; }
+  .highlight .code .deletion {
+    color: #dc322f; }
+  .highlight .code .selector-id, .highlight .code .selector-class {
+    color: #d3a60c; }
+  .highlight .code .formula {
+    background: #073642; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .strong {
+    font-weight: bold; }

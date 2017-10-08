@@ -1,0 +1,24 @@
+/*
+
+FAR Style (c) MajestiC <majestic2k@gmail.com>
+
+*/
+.highlight {
+  color: #0ff;
+  background: #000080; }
+  .highlight .code .subst {
+    color: #0ff; }
+  .highlight .code .string, .highlight .code .attribute, .highlight .code .symbol, .highlight .code .bullet, .highlight .code .built_in, .highlight .code .builtin-name, .highlight .code .template-tag, .highlight .code .template-variable, .highlight .code .addition {
+    color: #ff0; }
+  .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .section, .highlight .code .type, .highlight .code .name, .highlight .code .selector-id, .highlight .code .selector-class, .highlight .code .variable {
+    color: #fff; }
+  .highlight .code .comment, .highlight .code .quote, .highlight .code .doctag, .highlight .code .deletion {
+    color: #888; }
+  .highlight .code .number, .highlight .code .regexp, .highlight .code .literal, .highlight .code .link {
+    color: #0f0; }
+  .highlight .code .meta {
+    color: #008080; }
+  .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .title, .highlight .code .section, .highlight .code .name, .highlight .code .strong {
+    font-weight: bold; }
+  .highlight .code .emphasis {
+    font-style: italic; }

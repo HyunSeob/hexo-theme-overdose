@@ -1,0 +1,16 @@
+/*
+    Five-color theme from a single blue hue.
+*/
+.highlight {
+  color: #00193a;
+  background: #eaeef3; }
+  .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .title, .highlight .code .section, .highlight .code .doctag, .highlight .code .name, .highlight .code .strong {
+    font-weight: bold; }
+  .highlight .code .comment {
+    color: #738191; }
+  .highlight .code .string, .highlight .code .title, .highlight .code .section, .highlight .code .built_in, .highlight .code .literal, .highlight .code .type, .highlight .code .addition, .highlight .code .tag, .highlight .code .quote, .highlight .code .name, .highlight .code .selector-id, .highlight .code .selector-class {
+    color: #0048ab; }
+  .highlight .code .meta, .highlight .code .subst, .highlight .code .symbol, .highlight .code .regexp, .highlight .code .attribute, .highlight .code .deletion, .highlight .code .variable, .highlight .code .template-variable, .highlight .code .link, .highlight .code .bullet {
+    color: #4c81c9; }
+  .highlight .code .emphasis {
+    font-style: italic; }

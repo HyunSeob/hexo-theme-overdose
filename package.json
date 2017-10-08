@@ -4,11 +4,20 @@
   "description": "The theme which you must be overdosed.",
   "private": true,
   "scripts": {
-    "clone": "git clone https://github.com/spoqa/spoqa-han-sans ./source/libs/spoqa-han-sans;git clone https://github.com/hyunseob/noto-sans-kr ./source/libs/noto-sans-kr",
-    "build": "node_modules/.bin/uglifyjs ./source/js/dynamicMenu.js -m -o ./source/js/dynamicMenu.min.js;node_modules/.bin/uglifyjs ./source/js/sharer.js -m -o ./source/js/sharer.min.js;cat ./source/js/dynamicMenu.min.js ./source/js/sharer.min.js > ./source/js/index.min.js"
+    "precommit": "npm build",
+    "build-dynamicMenu": "node_modules/.bin/uglifyjs ./source/js/dynamicMenu.js -m -o ./source/js/dynamicMenu.min.js",
+    "build-share": "node_modules/.bin/uglifyjs ./source/js/sharer.js -m -o ./source/js/sharer.min.js",
+    "build-index": "cat ./source/js/dynamicMenu.min.js ./source/js/sharer.min.js > ./source/js/index.min.js",
+    "build": "npm run build-dynamicMenu && npm run build-share && npm run build-index && npm run cssbuild",
+    "cssbuild": "postcss \"src/css/index.css\" --output \"source/css/index.css\""
   },
-  "dependencies": {},
   "devDependencies": {
+    "cssnano": "^3.10.0",
+    "husky": "^0.14.3",
+    "normalize.css": "^7.0.0",
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0",
     "uglify-js": "^2.7.3"
   }
 }

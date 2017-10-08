@@ -1,0 +1,48 @@
+@import "./variables.css";
+
+:root {
+  --profile-image-size: 80px;
+}
+
+.profile {
+  position: relative;
+  display: block;
+}
+
+.profile__image {
+  width: var(--profile-image-size);
+  height: var(--profile-image-size);
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.profile__meta {
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.profile__meta__author {
+  font-size: 24px;
+  color: var(--black);
+  display: block;
+}
+
+.profile__meta__description {
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 1.4em;
+  margin-top: 4px;
+}
+
+.profile__social-links {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.profile__social-links__item {
+  font-size: 24px;
+  color: var(--gray);
+  margin: 0 12px;
+}

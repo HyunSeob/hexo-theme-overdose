@@ -1,0 +1,20 @@
+/*
+    codepen.io Embed Theme
+    Author: Justin Perry <http://github.com/ourmaninamsterdam>
+    Original theme - https://github.com/chriskempson/tomorrow-theme
+*/
+.highlight {
+  color: #fff;
+  background: #222; }
+  .highlight .code .comment, .highlight .code .quote {
+    color: #777; }
+  .highlight .code .variable, .highlight .code .template-variable, .highlight .code .tag, .highlight .code .regexp, .highlight .code .meta, .highlight .code .number, .highlight .code .built_in, .highlight .code .builtin-name, .highlight .code .literal, .highlight .code .params, .highlight .code .symbol, .highlight .code .bullet, .highlight .code .link, .highlight .code .deletion {
+    color: #ab875d; }
+  .highlight .code .section, .highlight .code .title, .highlight .code .name, .highlight .code .selector-id, .highlight .code .selector-class, .highlight .code .type, .highlight .code .attribute {
+    color: #9b869b; }
+  .highlight .code .string, .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .addition {
+    color: #8f9c6c; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .strong {
+    font-weight: bold; }

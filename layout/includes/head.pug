@@ -1,0 +1,72 @@
+- var pageTitle = page.title || config.subtitle || '';
+- if (is_archive()) pageTitle = 'Archives';
+- if (is_tag()) pageTitle = 'Tag: ' + page.tag;
+- if (is_category()) pageTitle = 'Category: ' + page.category;
+- if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
+- if (is_year()) pageTitle += ': ' + page.year;
+- pageTitle = pageTitle ? pageTitle += ' | ' + config.title : config.title;
+- var banner = bannerOf(page) || theme.default.url;
+-
+  var description = truncate(
+    strip_html(page.content) || config.description || theme.profile.description,
+    {
+      length: 140,
+      separator: ' ',
+      omission: '…',
+    }
+  )
+-
+  var openGraph = open_graph({
+    description,
+    image: banner,
+    fb_app_id: theme.facebook,
+    fb_admins: theme.fb_admin,
+    twitter_id: theme.twitter,
+    google_plus: theme.google_plus,
+    url: config.url.replace(/($|\/$)/, "/") + page.canonical_path.replace('index.html', '')
+  });
+- var highlight = (theme.highlight && (typeof theme.highlight === 'string')) ? theme.highlight : 'dracula';
+
+meta(charset='UTF-8')
+meta(http-equiv="X-UA-Compatible" content="IE=edge")
+meta(name="viewport" content="width=device-width, initial-scale=1")
+
+title= pageTitle
+
+if theme.font === 'spoqa-han-sans-kr'
+  link(rel="stylesheet" href="/libs/spoqa-han-sans-kr/css/SpoqaHanSans-kr.css")
+else if theme.font === 'spoqa-han-sans-jp'
+  link(rel="stylesheet" href="/libs/spoqa-han-sans-jp/css/SpoqaHanSans-jp.css")
+else if theme.font === 'noto-sans-kr'
+  link(rel="stylesheet" href="/libs/noto-sans-kr/styles.css")
+
+link(rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css")
+link(rel="stylesheet" href="/css/index.css")
+link(rel="stylesheet" href="/css/highlights/" + highlight + ".css")
+
+| !{ canonical(config, page) }
+| !{ openGraph }
+if is_post()
+  meta(property="article:author" content=theme.profile.social.facebook || config.author)
+  meta(property="twitter:label1" content="Published at")
+  meta(property="twitter:data1" content=full_date(page.date))
+  meta(property="twitter:label2" content="Written by")
+  meta(property="twitter:data2" content=config.author)
+
+if theme.favicon
+  link(rel="icon" href=theme.favicon)
+if theme.profile.social.rss
+  link(rel="alternate" href=theme.profile.social.rss type="application/atom+xml" title=config.title)
+
+if theme.google_site_verification
+  meta(name="google-site-verification" content=theme.google_site_verification)
+if theme.naver_site_verification
+  meta(name="naver-site-verification" content=theme.naver_site_verification)
+if theme.google_analytics
+  script.
+    (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '#{theme.google_analytics}', 'auto');
+    ga('send', 'pageview');

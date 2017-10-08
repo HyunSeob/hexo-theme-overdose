@@ -1,0 +1,29 @@
+/**
+ * Obsidian style
+ * ported by Alexander Marenin (http://github.com/ioncreature)
+ */
+.highlight {
+  color: #e0e2e4;
+  background: #282b2e; }
+  .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .literal, .highlight .code .selector-id {
+    color: #93c763; }
+  .highlight .code .number {
+    color: #ffcd22; }
+  .highlight .code .attribute {
+    color: #668bb0; }
+  .highlight .code .code, .highlight .code .class .title, .highlight .code .section {
+    color: #fff; }
+  .highlight .code .regexp, .highlight .code .link {
+    color: #d39745; }
+  .highlight .code .meta {
+    color: #557182; }
+  .highlight .code .tag, .highlight .code .name, .highlight .code .bullet, .highlight .code .subst, .highlight .code .emphasis, .highlight .code .type, .highlight .code .built_in, .highlight .code .selector-attr, .highlight .code .selector-pseudo, .highlight .code .addition, .highlight .code .variable, .highlight .code .template-tag, .highlight .code .template-variable {
+    color: #8cbbad; }
+  .highlight .code .string, .highlight .code .symbol {
+    color: #ec7600; }
+  .highlight .code .comment, .highlight .code .quote, .highlight .code .deletion {
+    color: #818e96; }
+  .highlight .code .selector-class {
+    color: #a082bd; }
+  .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .literal, .highlight .code .doctag, .highlight .code .title, .highlight .code .section, .highlight .code .type, .highlight .code .name, .highlight .code .strong {
+    font-weight: bold; }

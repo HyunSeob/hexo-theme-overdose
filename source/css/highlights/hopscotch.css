@@ -1,0 +1,30 @@
+/*
+ * Hopscotch
+ * by Jan T. Sott
+ * https://github.com/idleberg/Hopscotch
+ *
+ * This work is licensed under the Creative Commons CC0 1.0 Universal License
+ */
+.highlight {
+  color: #b9b5b8;
+  background: #322931; }
+  .highlight .code .comment, .highlight .code .quote {
+    color: #989498; }
+  .highlight .code .variable, .highlight .code .template-variable, .highlight .code .attribute, .highlight .code .tag, .highlight .code .name, .highlight .code .selector-id, .highlight .code .selector-class, .highlight .code .regexp, .highlight .code .link, .highlight .code .deletion {
+    color: #dd464c; }
+  .highlight .code .number, .highlight .code .built_in, .highlight .code .builtin-name, .highlight .code .literal, .highlight .code .type, .highlight .code .params {
+    color: #fd8b19; }
+  .highlight .code .class .title {
+    color: #fdcc59; }
+  .highlight .code .string, .highlight .code .symbol, .highlight .code .bullet, .highlight .code .addition {
+    color: #8fc13e; }
+  .highlight .code .meta {
+    color: #149b93; }
+  .highlight .code .function, .highlight .code .section, .highlight .code .title {
+    color: #1290bf; }
+  .highlight .code .keyword, .highlight .code .selector-tag {
+    color: #c85e7c; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .strong {
+    font-weight: bold; }

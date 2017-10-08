@@ -1,0 +1,23 @@
+doctype html
+html(lang=config.language)
+  head
+    include head
+  body(itemscope itemtype="https://schema.org/WebPage")
+    include menu
+    .page-background
+    .content-container
+      .content-outer
+        .content-inner(itemscope itemtype="https://schema.org/Blog")
+          if body
+            div!= body
+          else
+            block content
+    include footer
+
+    if theme.dynamic_menu
+      != "<!--[if lt IE 10]>"
+      script(src="/js/classList.min.js")
+      != "<![endif]-->"
+      script(src="/js/index.min.js")
+    else
+      script(src="/js/sharer.min.js")

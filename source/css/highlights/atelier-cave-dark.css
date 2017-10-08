@@ -1,0 +1,30 @@
+/* Base16 Atelier Cave Dark - Theme */
+/* by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/cave) */
+/* Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16) */
+.highlight {
+  color: #8b8792;
+  background: #19171c; }
+  .highlight .code .comment, .highlight .code .quote {
+    color: #7e7887; }
+  .highlight .code .variable, .highlight .code .template-variable, .highlight .code .attribute, .highlight .code .regexp, .highlight .code .link, .highlight .code .tag, .highlight .code .name, .highlight .code .selector-id, .highlight .code .selector-class {
+    color: #be4678; }
+  .highlight .code .number, .highlight .code .meta, .highlight .code .built_in, .highlight .code .builtin-name, .highlight .code .literal, .highlight .code .type, .highlight .code .params {
+    color: #aa573c; }
+  .highlight .code .string, .highlight .code .symbol, .highlight .code .bullet {
+    color: #2a9292; }
+  .highlight .code .title, .highlight .code .section {
+    color: #576ddb; }
+  .highlight .code .keyword, .highlight .code .selector-tag {
+    color: #955ae7; }
+  .highlight .code .deletion, .highlight .code .addition {
+    color: #19171c;
+    display: inline-block;
+    width: 100%; }
+  .highlight .code .deletion {
+    background-color: #be4678; }
+  .highlight .code .addition {
+    background-color: #2a9292; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .strong {
+    font-weight: bold; }

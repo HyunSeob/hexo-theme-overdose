@@ -1,0 +1,140 @@
+@import "./variables.css";
+
+:root {
+  --icon-size: 2.5rem;
+  --icon-margin: calc((var(--menu-height) - var(--icon-size)) / 2);
+}
+
+.menu {
+  display:table-row;
+  width: 100%;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--lighted-gray);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  @media (--desktop) {
+    position: fixed;
+  }
+}
+
+.menu--hide {
+  @media (--desktop) {
+    transform: translateY(calc(var(--menu-height) * -1));
+  }
+}
+
+.menu-inner {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  @media (--mobile) {
+    padding: 0;
+  }
+}
+
+.menu__left-area {
+  float: left;
+  height: var(--menu-height);
+  @media (--mobile) {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--semi-white);
+    & .menu__item {
+      float: none;
+    }
+  }
+}
+
+.menu__right-area {
+  float: right;
+  height: var(--menu-height);
+  @media (--mobile) {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+.menu__item {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-right: var(--base-margin);
+  &:last-child {
+    margin-right: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: transparent;
+    transform: translateY(2px);
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;
+  }
+  &:hover {
+    & .menu__item__link {
+      color: var(--gray);
+    }
+    &:after {
+      background-color: var(--gray);
+      transform: translateY(0);
+    }
+  }
+  @media (--mobile) {
+    float: none;
+  }
+}
+
+.menu__item--active .menu__item__link {
+  color: var(--primary-sky);
+}
+
+.menu__item--active:after {
+  background-color: var(--primary-sky);
+  transform: translateY(0);
+}
+
+.menu__item__link {
+  color: var(--darked-gray);
+  font-size: 1rem;
+  display: inline-block;
+  height: var(--menu-height);
+  line-height: var(--menu-height);
+}
+
+.menu__item__link--brand {
+  color: var(--black);
+}
+
+.menu__item__link--brand__image {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin: var(--icon-margin) 1rem var(--icon-margin) 0;
+  display: inline-block;
+  float: left;
+}
+
+.menu__item__link--brand__label {
+  height: var(--menu-height);
+  line-height: var(--menu-height);
+  display: inline-block;
+  float: left;
+  font-weight: var(--bold-font);
+}

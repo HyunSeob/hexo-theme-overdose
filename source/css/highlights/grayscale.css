@@ -1,0 +1,51 @@
+/*
+
+grayscale style (c) MY Sun <simonmysun@gmail.com>
+
+*/
+.highlight {
+  color: #333;
+  background: #fff; }
+  .highlight .code .comment, .highlight .code .quote {
+    color: #777;
+    font-style: italic; }
+  .highlight .code .keyword, .highlight .code .selector-tag, .highlight .code .subst {
+    color: #333;
+    font-weight: bold; }
+  .highlight .code .number, .highlight .code .literal {
+    color: #777; }
+  .highlight .code .string, .highlight .code .doctag, .highlight .code .formula {
+    color: #333;
+    background: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQIW2O8e/fufwYGBgZBQUEQxcCIIfDu3Tuwivfv30NUoAsAALHpFMMLqZlPAAAAAElFTkSuQmCC") repeat; }
+  .highlight .code .title, .highlight .code .section, .highlight .code .selector-id {
+    color: #000;
+    font-weight: bold; }
+  .highlight .code .subst {
+    font-weight: normal; }
+  .highlight .code .class .title, .highlight .code .type, .highlight .code .name {
+    color: #333;
+    font-weight: bold; }
+  .highlight .code .tag {
+    color: #333; }
+  .highlight .code .regexp {
+    color: #333;
+    background: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPUlEQVQYV2NkQAN37979r6yszIgujiIAU4RNMVwhuiQ6H6wQl3XI4oy4FMHcCJPHcDS6J2A2EqUQpJhohQDexSef15DBCwAAAABJRU5ErkJggg==") repeat; }
+  .highlight .code .symbol, .highlight .code .bullet, .highlight .code .link {
+    color: #000;
+    background: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAO7d+/+z4gsBhJwdXVlhAvCBECKwIIwAbhKZBUwBQA6hBpm5efZsgAAAABJRU5ErkJggg==") repeat; }
+  .highlight .code .built_in, .highlight .code .builtin-name {
+    color: #000;
+    text-decoration: underline; }
+  .highlight .code .meta {
+    color: #999;
+    font-weight: bold; }
+  .highlight .code .deletion {
+    color: #fff;
+    background: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADCAYAAABS3WWCAAAAE0lEQVQIW2MMDQ39zzhz5kwIAQAyxweWgUHd1AAAAABJRU5ErkJggg==") repeat; }
+  .highlight .code .addition {
+    color: #000;
+    background: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAALUlEQVQYV2N89+7dfwYk8P79ewZBQUFkIQZGOiu6e/cuiptQHAPl0NtNxAQBAM97Oejj3Dg7AAAAAElFTkSuQmCC") repeat; }
+  .highlight .code .emphasis {
+    font-style: italic; }
+  .highlight .code .strong {
+    font-weight: bold; }

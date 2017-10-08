@@ -1,0 +1,23 @@
+@import "./variables.css";
+
+.page-background {
+  z-index: -1;
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.content-outer {
+  margin-top: calc(var(--menu-height) * 2);
+  @media (--desktop) {
+    margin-top: var(--menu-height);
+  }
+}
+
+.content-inner {
+  width: 100%;
+  padding: var(--base-margin) 0;
+}
