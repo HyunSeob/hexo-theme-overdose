@@ -30,7 +30,7 @@ a {
 }
 
 hr {
-  margin: var(--base-margin 0);
+  margin: var(--base-margin) 0;
   border: 0;
   border-bottom: 1px solid var(--lighted-gray);
 }
