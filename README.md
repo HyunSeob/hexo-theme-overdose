@@ -42,9 +42,9 @@ $ cd your/hexo/directory
 $ git clone https://github.com/HyunSeob/hexo-theme-overdose.git themes/overdose
 ```
 
-This theme is using pug. So install renderer.
+This theme is using pug. So you have to install the renderer.
 ```
-$ npm install --save hexo-renderer-pug # or you can still use hexo-renderer-jade, too.
+$ npm install --save hexo-renderer-jade # Don't use hexo-renderer-pug. It doesn't work.
 ```
 
 Then, copy the configuration example file.
