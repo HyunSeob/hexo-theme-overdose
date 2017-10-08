@@ -7,8 +7,17 @@
 - pageTitle = pageTitle ? pageTitle += ' | ' + config.title : config.title;
 - var banner = bannerOf(page) || theme.default.url;
 -
+  var description = truncate(
+    strip_html(page.content) || config.description || theme.profile.description,
+    {
+      length: 140,
+      separator: ' ',
+      omission: '…',
+    }
+  )
+-
   var openGraph = open_graph({
-    description: page.content || config.description || theme.profile.description,
+    description,
     image: banner,
     fb_app_id: theme.facebook,
     fb_admins: theme.fb_admin,
