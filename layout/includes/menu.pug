@@ -14,10 +14,10 @@ nav#menu.menu
           title="Home"
           rel="home")
           img.menu__item__link--brand__image(
-            src=theme.favicon
+            src=url_for(theme.favicon)
             alt=config.title)
           span.menu__item__link--brand__label= config.title
     .menu__right-area
       each url, label in theme.menu
-        .menu__item(class=equalPath(url, page.path) ? 'menu__item--active' : '')
-          a.menu__item__link(href=url)= label
+        .menu__item(class=equalPath(config.root + url, page.path) ? 'menu__item--active' : '')
+          a.menu__item__link(href=config.root + url)= label

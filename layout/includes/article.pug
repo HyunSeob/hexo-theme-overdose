@@ -31,7 +31,7 @@ article#article.article(itemscope itemtype="https://schema.org/BlogPosting")
     itemprop="author"
     itemtype="https://schema.org/Person")
     img.article__author__image(
-      src=profileImageSrc
+      src=url_for(profileImageSrc)
       alt=config.author)
     a.article__author__link(
       href=theme.profile.link
@@ -81,15 +81,15 @@ article#article.article(itemscope itemtype="https://schema.org/BlogPosting")
   - var banner = page.banner || theme.default;
   meta(itemprop="dateModified" content=date_xml(page.updated))
   meta(itemprop="articleBody" content=truncate(strip_html(page.content), truncOptions))
-  meta(itemprop="url" content=config.url + '/' + page.path)
-  meta(itemprop="mainEntityOfPage" content=config.url + '/' + page.path)
+  meta(itemprop="url" content=url_for(page.path))
+  meta(itemprop="mainEntityOfPage" content=url_for(page.path))
   div(itemscope itemtype="https://schema.org/Organization" itemprop="publisher")
     meta(itemprop="name" content=config.title)
     div(itemscope itemprop="logo" itemtype="https://schema.org/ImageObject")
-      meta(itemprop="url" content=config.url + theme.favicon)
+      meta(itemprop="url" content=url_for(theme.favicon))
   div(itemscope itemtype="https://schema.org/ImageObject" itemprop="image")
-    meta(itemprop="contentUrl" content=config.url + banner.url)
-    meta(itemprop="url" content=config.url + banner.url)
+    meta(itemprop="contentUrl" content=url_for(banner.url))
+    meta(itemprop="url" content=url_for(banner.url))
     meta(itemprop="width" content=banner.width)
     meta(itemprop="height" content=banner.height)
 
