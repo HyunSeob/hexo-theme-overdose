@@ -18,7 +18,7 @@
 -
   var openGraph = open_graph({
     description,
-    image: banner,
+    image: url_for(banner),
     fb_app_id: theme.facebook,
     fb_admins: theme.fb_admin,
     twitter_id: theme.twitter,
@@ -34,15 +34,15 @@ meta(name="viewport" content="width=device-width, initial-scale=1")
 title= pageTitle
 
 if theme.font === 'spoqa-han-sans-kr'
-  link(rel="stylesheet" href="/libs/spoqa-han-sans-kr/css/SpoqaHanSans-kr.css")
+  link(rel="stylesheet" href=url_for("/libs/spoqa-han-sans-kr/css/SpoqaHanSans-kr.css"))
 else if theme.font === 'spoqa-han-sans-jp'
-  link(rel="stylesheet" href="/libs/spoqa-han-sans-jp/css/SpoqaHanSans-jp.css")
+  link(rel="stylesheet" href=url_for("/libs/spoqa-han-sans-jp/css/SpoqaHanSans-jp.css"))
 else if theme.font === 'noto-sans-kr'
-  link(rel="stylesheet" href="/libs/noto-sans-kr/styles.css")
+  link(rel="stylesheet" href=url_for("/libs/noto-sans-kr/styles.css"))
 
-link(rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css")
-link(rel="stylesheet" href="/css/index.css")
-link(rel="stylesheet" href="/css/highlights/" + highlight + ".css")
+link(rel="stylesheet" href=url_for("/libs/font-awesome/css/font-awesome.min.css"))
+link(rel="stylesheet" href=url_for("/css/index.css"))
+link(rel="stylesheet" href=url_for("/css/highlights/" + highlight + ".css"))
 
 | !{ canonical(config, page) }
 | !{ openGraph }
@@ -54,7 +54,7 @@ if is_post()
   meta(property="twitter:data2" content=config.author)
 
 if theme.favicon
-  link(rel="icon" href=theme.favicon)
+  link(rel="icon" href=url_for(theme.favicon))
 if theme.profile.social.rss
   link(rel="alternate" href=theme.profile.social.rss type="application/atom+xml" title=config.title)
 

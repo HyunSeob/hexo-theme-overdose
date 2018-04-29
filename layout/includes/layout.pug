@@ -16,8 +16,8 @@ html(lang=config.language)
 
     if theme.dynamic_menu
       != "<!--[if lt IE 10]>"
-      script(src="/js/classList.min.js")
+      script(src=url_for("/js/classList.min.js"))
       != "<![endif]-->"
-      script(src="/js/index.min.js")
+      script(src=url_for("/js/index.min.js"))
     else
-      script(src="/js/sharer.min.js")
+      script(src=url_for("/js/sharer.min.js"))
