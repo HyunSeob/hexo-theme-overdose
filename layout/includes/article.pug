@@ -4,7 +4,7 @@ article#article.article(itemscope itemtype="https://schema.org/BlogPosting")
     time.article__meta__time(
       datetime=date_xml(page.date)
       itemprop="datePublished"
-    )= full_date(page.date)
+    )= full_date(page.date, config.date_format)
     if page.categories && page.categories.length
       .article__meta__categories
         each category, index in page.categories.data
